@@ -2,9 +2,9 @@
 
 Interactive visualization of how notable people think, speak, and behave — powered by AI.
 
-Enter any person's name and get a rich cognitive architecture map: themed nodes, weighted connections, life-phase trends, behavioural patterns, and more.
+Enter any person's name (exists in wikipedia) and get a rich cognitive architecture map: themed nodes, weighted connections, life-phase trends, behavioural patterns, and more.
 
-<video src="demo.mov" autoplay loop muted playsinline width="100%"></video>
+<video src="demo.mp4" autoplay loop muted playsinline width="100%"></video>
 
 ![Dark mode](https://img.shields.io/badge/theme-dark%20%26%20light-blue)
 
@@ -27,7 +27,7 @@ Enter any person's name and get a rich cognitive architecture map: themed nodes,
 - Cognitive architecture decision tree
 - Thinking, speaking, and behaviour pattern analysis with samples, impact, outcomes, and audience influence
 - Life-phase timeline animation
-- Light and dark mode (Apple-inspired light palette)
+- Light and dark mode
 - Export to standalone HTML or JSON
 - Import/export person data for sharing
 
@@ -49,7 +49,7 @@ Enter any person's name and get a rich cognitive architecture map: themed nodes,
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/mindmap.git
+git clone https://github.com/yinghe1/mindmap.git
 cd mindmap
 
 # Install dependencies (workspaces)
