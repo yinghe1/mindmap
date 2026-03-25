@@ -1,0 +1,99 @@
+:root {
+  --bg: #050813;
+  --bg2: #0a1022;
+  --panel: rgba(12, 18, 36, 0.78);
+  --panel2: rgba(18, 27, 52, 0.74);
+  --text: #edf3ff;
+  --muted: #a6b4d8;
+  --border: rgba(255, 255, 255, 0.08);
+  --chip: rgba(255, 255, 255, 0.05);
+  --accent: #8ab7ff;
+  --accent2: #c39cff;
+  --good: #7df2ca;
+  --warn: #ffc778;
+  --danger: #ff7b7b;
+  --technical: #5ea1ff;
+  --strategic: #72e5c7;
+  --reflective: #d299ff;
+  --macro: #ffb26b;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+  --font-xs: 11px;
+  --font-sm: 12px;
+  --font-md: 13px;
+  --font-lg: 18px;
+  --font-xl: 20px;
+  --font-xxl: 22px;
+  --shadow-tooltip: 0 12px 40px rgba(0, 0, 0, 0.32);
+  --card-bg: rgba(255, 255, 255, 0.035);
+  --subtle-bg: rgba(255, 255, 255, 0.03);
+  --bar-track: rgba(255, 255, 255, 0.08);
+  --dot-border: rgba(255, 255, 255, 0.15);
+  --scrollbar-thumb: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="light"] {
+  --bg: #ffffff;
+  --bg2: #f5f5f7;
+  --panel: rgba(255, 255, 255, 0.82);
+  --panel2: rgba(245, 245, 247, 0.78);
+  --text: #1d1d1f;
+  --muted: #6e6e73;
+  --border: rgba(0, 0, 0, 0.08);
+  --chip: rgba(0, 0, 0, 0.04);
+  --accent: #0071e3;
+  --accent2: #9b59b6;
+  --good: #34c759;
+  --warn: #ff9500;
+  --danger: #ff3b30;
+  --technical: #0071e3;
+  --strategic: #28a068;
+  --reflective: #af52de;
+  --macro: #ff9500;
+  --shadow-tooltip: 0 12px 40px rgba(0, 0, 0, 0.08);
+  --card-bg: rgba(0, 0, 0, 0.03);
+  --subtle-bg: rgba(0, 0, 0, 0.02);
+  --bar-track: rgba(0, 0, 0, 0.06);
+  --dot-border: rgba(0, 0, 0, 0.15);
+  --scrollbar-thumb: rgba(0, 0, 0, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(94, 161, 255, 0.16), transparent 28%),
+    radial-gradient(circle at 85% 18%, rgba(210, 153, 255, 0.12), transparent 25%),
+    radial-gradient(circle at 65% 85%, rgba(255, 178, 107, 0.08), transparent 28%),
+    linear-gradient(180deg, var(--bg2), var(--bg));
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+[data-theme="light"] body {
+  background: linear-gradient(180deg, var(--bg2), var(--bg));
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 3px;
+}
