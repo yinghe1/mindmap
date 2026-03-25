@@ -4,7 +4,7 @@ Interactive visualization of how notable people think, speak, and behave — pow
 
 Enter any person's name (exists in wikipedia) and get a rich cognitive architecture map: themed nodes, weighted connections, life-phase trends, behavioural patterns, and more.
 
-<video src="demo.mp4" autoplay loop muted playsinline width="100%"></video>
+<video src="https://github.com/user-attachments/assets/25b86ebb-88b7-4b1b-a801-79f02b248d20" autoplay loop muted playsinline width="100%"></video>
 
 ![Dark mode](https://img.shields.io/badge/theme-dark%20%26%20light-blue)
 
