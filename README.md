@@ -23,6 +23,8 @@ Enter any person's name (exists in wikipedia) and get a rich cognitive architect
 ## Features
 
 - Generate cognitive maps for any notable person via Wikipedia + LLM
+- Wikipedia is only for validaton to verify the person is real
+- Cognative architecture and patterns are pulled from the latent space via prompt call to the llm model
 - Interactive force-directed graph with draggable nodes
 - Cognitive architecture decision tree
 - Thinking, speaking, and behaviour pattern analysis with samples, impact, outcomes, and audience influence
