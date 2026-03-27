@@ -10,6 +10,7 @@ import {
   getNextVersion,
 } from '../db/queries/people.js';
 import { regeneratePerson } from '../services/pipeline.js';
+import { isOpenAIConfigured } from '../config.js';
 import type { GraphData } from '../types/graph.js';
 import type { ContextData } from '../types/context.js';
 import type { ErrorResponse, GenerateResponse } from '../types/api.js';
@@ -50,6 +51,11 @@ router.get('/people/:id', (req, res) => {
 
 router.post('/people/:id/regenerate', async (req, res) => {
   try {
+    if (!isOpenAIConfigured()) {
+      res.status(503).json({ error: 'OpenAI API key is not configured. Please set OPENAI_API_KEY in your .env file.' } as ErrorResponse);
+      return;
+    }
+
     const id = Number(req.params.id);
     if (isNaN(id)) {
       res.status(400).json({ error: 'Invalid ID' } as ErrorResponse);

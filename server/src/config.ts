@@ -11,8 +11,11 @@ export const config = {
 };
 
 export function validateConfig(): void {
-  if (!config.openaiApiKey) {
-    console.error('OPENAI_API_KEY is required. Create a .env file with your key.');
-    process.exit(1);
+  if (!config.openaiApiKey || config.openaiApiKey === 'sk-your-key-here') {
+    console.warn('WARNING: OPENAI_API_KEY is not configured. Generation features are disabled. You can still import JSON files.');
   }
+}
+
+export function isOpenAIConfigured(): boolean {
+  return !!config.openaiApiKey && config.openaiApiKey !== 'sk-your-key-here';
 }
