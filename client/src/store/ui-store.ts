@@ -3,6 +3,7 @@ import type { ClusterType } from '../api/client';
 
 export type TimeMode = 'all' | 'recent' | 'playback';
 export type ViewScreen = 'input' | 'graph';
+export type OverlayView = null | 'patterns';
 
 interface UiState {
   screen: ViewScreen;
@@ -15,7 +16,7 @@ interface UiState {
   loading: boolean;
   error: string | null;
   generationProgress: string | null;
-  showPatterns: boolean;
+  overlay: OverlayView;
   theme: 'dark' | 'light';
 
   setScreen: (screen: ViewScreen) => void;
@@ -28,8 +29,13 @@ interface UiState {
   setLoading: (v: boolean) => void;
   setError: (error: string | null) => void;
   setGenerationProgress: (msg: string | null) => void;
-  setShowPatterns: (v: boolean) => void;
+  navigateTo: (view: OverlayView) => void;
   toggleTheme: () => void;
+}
+
+function overlayFromPath(path: string): OverlayView {
+  if (path === '/patterns') return 'patterns';
+  return null;
 }
 
 export const useUiStore = create<UiState>((set) => ({
@@ -43,7 +49,7 @@ export const useUiStore = create<UiState>((set) => ({
   loading: false,
   error: null,
   generationProgress: null,
-  showPatterns: false,
+  overlay: overlayFromPath(window.location.pathname),
   theme: 'dark',
 
   setScreen: (screen) => set({ screen }),
@@ -62,6 +68,18 @@ export const useUiStore = create<UiState>((set) => ({
   setLoading: (v) => set({ loading: v }),
   setError: (error) => set({ error }),
   setGenerationProgress: (msg) => set({ generationProgress: msg }),
-  setShowPatterns: (v) => set({ showPatterns: v }),
+  navigateTo: (view) => {
+    if (view) {
+      window.history.pushState({}, '', `/${view}`);
+    } else {
+      window.history.pushState({}, '', '/');
+    }
+    set({ overlay: view });
+  },
   toggleTheme: () => set((s) => ({ theme: s.theme === 'dark' ? 'light' : 'dark' })),
 }));
+
+// Listen for browser back/forward
+window.addEventListener('popstate', () => {
+  useUiStore.setState({ overlay: overlayFromPath(window.location.pathname) });
+});

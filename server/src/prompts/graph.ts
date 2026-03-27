@@ -52,12 +52,5 @@ Model how this person's mind processes situations and reaches decisions, structu
 - cognitive_tensions: 2-3 core internal tensions that shape behaviour:
   - pole_a, pole_b: the two opposing forces
   - description: how this tension manifests
-- behavioural_signature: 1-2 sentences describing the characteristic pattern that emerges
-
-PATTERNS:
-Identify recurring patterns in how this person thinks, speaks, and behaves. For each category, provide 3-5 patterns ranked by strength (0.0-1.0):
-- thinking: cognitive habits, reasoning styles, mental models they rely on
-- speaking: rhetorical devices, communication style, characteristic phrases or approaches
-- behavior: recurring actions, habits, characteristic responses to situations
-Each pattern needs: pattern (short label), description (1 sentence), strength (0.0-1.0), samples (2-3 concrete examples — actual quotes, specific instances, or observable behaviors), impact (1-2 sentences on how this pattern shaped outcomes, decisions, or relationships — explain the reasoning behind why this pattern matters), outcome (a specific, concrete result or consequence this pattern produced in their life), influence (1-2 sentences on how this pattern affected the audience, followers, or broader culture — explain the reasoning behind why it resonated or worked)`;
+- behavioural_signature: 1-2 sentences describing the characteristic pattern that emerges`;
 }

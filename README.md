@@ -61,6 +61,7 @@ npm install
 cp server/.env.example server/.env
 # Edit server/.env and add your OpenAI API key:
 #   OPENAI_API_KEY=sk-...
+# If you don't want to use llm, you can just import the json in the importableData folder to see how it works
 
 # Run in development mode (starts both server and client)
 npm run dev

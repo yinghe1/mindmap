@@ -8,7 +8,7 @@ import { CognitiveArchitecturePanel } from './CognitiveArchitecture';
 export function DetailPanel() {
   const selectedNode = useGraphStore((s) => s.selectedNode);
   const selectedEdge = useGraphStore((s) => s.selectedEdge);
-  const setShowPatterns = useUiStore((s) => s.setShowPatterns);
+  const navigateTo = useUiStore((s) => s.navigateTo);
 
   return (
     <>
@@ -17,7 +17,7 @@ export function DetailPanel() {
       ) : selectedEdge ? (
         <EdgeDetail edge={selectedEdge} />
       ) : (
-        <Overview onShowPatterns={() => setShowPatterns(true)} />
+        <Overview onShowPatterns={() => navigateTo('patterns')} />
       )}
       <CognitiveArchitecturePanel />
     </>

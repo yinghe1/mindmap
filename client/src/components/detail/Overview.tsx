@@ -40,19 +40,21 @@ export function Overview({ onShowPatterns }: OverviewProps) {
       {onShowPatterns && (
         <Card>
           <a
-            onClick={onShowPatterns}
+            href="/patterns"
+            onClick={(e) => { e.preventDefault(); onShowPatterns(); }}
             style={{
               color: 'var(--accent)',
               fontSize: 'var(--font-md)',
               cursor: 'pointer',
               fontWeight: 600,
+              textDecoration: 'none',
             }}
           >
             Patterns &rarr;
           </a>
           <p style={{ color: 'var(--muted)', fontSize: 'var(--font-sm)', margin: '4px 0 0' }}>
-            Thinking, speaking, and behaviour patterns
-            {!context?.patterns && ' (regenerate to populate)'}
+            Deep pattern analysis of thinking, behavior, and decisions
+            {!context?.pattern_details && ' (regenerate to populate)'}
           </p>
         </Card>
       )}

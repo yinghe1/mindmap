@@ -17,6 +17,7 @@ export function generateExportHtml(person: Person, graph: GraphData, context: Co
   const arch = context.cognitive_architecture;
   const archJson = arch ? JSON.stringify(arch) : 'null';
   const influencesJson = JSON.stringify(context.influences || []);
+  const patternDetails = context.pattern_details || '';
   const wikiUrl = person.wiki_url ? escapeHtml(person.wiki_url) : '';
   const wikiSummary = escapeHtml((person.wiki_summary || '').slice(0, 250));
 
@@ -56,6 +57,31 @@ button:hover,.chip:hover{background:rgba(255,255,255,0.09)}.chip.active{outline:
 .detail-mini{margin-top:8px;font-size:12px;color:var(--muted)}
 .spark{width:100%;height:54px;margin-top:8px;display:block;border-radius:10px;background:rgba(255,255,255,0.03)}
 .back-link{font-size:12px;color:var(--accent);cursor:pointer;margin-bottom:10px}
+.patterns-overlay{position:fixed;inset:0;z-index:100;background:var(--bg);overflow-y:auto}
+.patterns-overlay .pat-inner{max-width:760px;margin:0 auto;padding:40px 28px 80px;position:relative;z-index:1}
+.patterns-overlay .pat-bg{position:fixed;inset:0;background:radial-gradient(circle at 20% 5%,rgba(138,183,255,0.08),transparent 40%),radial-gradient(circle at 80% 15%,rgba(195,156,255,0.06),transparent 35%);pointer-events:none;z-index:0}
+.patterns-overlay .pat-label{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--accent);font-weight:600;margin-bottom:8px}
+.patterns-overlay .pat-title{margin:0;font-size:28px;font-weight:700;color:var(--text);letter-spacing:-0.5px;line-height:1.2}
+.patterns-overlay .pat-sub{font-size:14px;color:var(--muted);margin-top:8px;line-height:1.6}
+.patterns-overlay .pat-sep{height:1px;background:linear-gradient(90deg,var(--accent),var(--accent2),transparent);margin-top:20px;opacity:0.3}
+.patterns-overlay .pat-back{color:var(--accent);font-size:13px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;margin-bottom:24px;text-decoration:none;opacity:0.8}
+.patterns-overlay .pat-back:hover{opacity:1}
+.pat-section{margin-bottom:16px}
+.pat-h1{font-size:22px;font-weight:700;color:var(--text);letter-spacing:-0.3px;margin:0 0 8px}
+.pat-h2-card{background:rgba(255,255,255,0.035);border:1px solid var(--border);border-radius:16px;padding:18px 20px;margin-bottom:12px}
+.pat-h2-title{font-size:16px;font-weight:700;color:var(--text);display:flex;align-items:center;gap:10px}
+.pat-h2-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+.pat-h3-card{background:rgba(255,255,255,0.02);border-radius:12px;padding:14px 16px;border:1px solid var(--chip);margin-bottom:8px}
+.pat-h3-title{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px}
+.pat-body p{font-size:13px;color:var(--muted);line-height:1.7;margin:6px 0}
+.pat-body ul{margin:8px 0;padding-left:18px;list-style:none}
+.pat-body ul li{font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:4px;position:relative;padding-left:14px}
+.pat-body ul li::before{content:'';position:absolute;left:0;top:0.55em;width:4px;height:4px;border-radius:50%;background:var(--accent);opacity:0.5}
+.pat-body ol{margin:8px 0;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:6px}
+.pat-body ol li{font-size:13px;color:var(--muted);line-height:1.7;display:flex;gap:10px;align-items:flex-start}
+.pat-body ol li .num{font-size:11px;font-weight:700;color:var(--accent);background:rgba(138,183,255,0.12);border-radius:999px;min-width:22px;height:22px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.pat-link{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;background:rgba(138,183,255,0.08);border:1px solid rgba(138,183,255,0.18);border-radius:12px;color:var(--accent);font-size:13px;font-weight:600;cursor:pointer;text-decoration:none;margin-top:10px;transition:background 0.15s}
+.pat-link:hover{background:rgba(138,183,255,0.15)}
 .arch-sep{font-size:12px;text-transform:uppercase;letter-spacing:1.1px;color:var(--muted);margin-bottom:12px;padding-top:12px;border-top:1px solid var(--border)}
 .tension-box{margin-bottom:10px;padding:10px 12px;background:rgba(255,255,255,0.02);border-radius:14px;border:1px solid rgba(255,255,255,0.04)}
 .pole-a{font-size:12px;font-weight:700;color:var(--accent)}.pole-b{font-size:12px;font-weight:700;color:var(--accent2)}
@@ -90,6 +116,7 @@ const influences=${influencesJson};
 const wikiUrl="${escapeJs(wikiUrl)}";
 const wikiSummary="${escapeJs(wikiSummary)}";
 const personName="${escapeJs(person.name)}";
+const patternDetails="${escapeJs(patternDetails)}";
 
 const months=["Phase 1","Phase 2","Phase 3","Phase 4"];
 const timeModes=[{id:"all",label:"Whole life"},{id:"recent",label:"Late period emphasis"},{id:"playback",label:"Life-phase playback"}];
@@ -143,6 +170,7 @@ function renderArch(){
 function showOverview(){
   const top=[...nodes].sort((a,b)=>b.importance-a.importance).slice(0,4);
   let h='<div class="detail-card"><h3>Overview</h3><p>'+esc(wikiSummary)+'</p>'+(wikiUrl?'<a href="'+wikiUrl+'" target="_blank" rel="noopener" style="color:var(--accent);font-size:12px;display:inline-block;margin-top:8px">Wikipedia</a>':'')+'</div>';
+  if(patternDetails){h+='<a class="pat-link" style="margin-bottom:16px" onclick="showPatterns()">\\u{1F9E9} Patterns \\u2192</a>'}
   h+='<div class="detail-card"><strong>Strongest attractors</strong><div style="margin-top:8px">'+top.map((n,i)=>'<p style="margin:4px 0">'+(i+1)+'. '+esc(n.label)+'</p>').join('')+'</div></div>';
   if(influences.length>0){h+='<div class="detail-card"><strong>Key influences</strong><div style="margin-top:8px">'+influences.slice(0,5).map(inf=>'<p style="margin:4px 0"><a href="https://en.wikipedia.org/wiki/'+encodeURIComponent(inf.name.replace(/\\s+/g,'_'))+'" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">'+esc(inf.name)+'</a> <span style="color:var(--muted)">('+esc(inf.type)+')</span></p>').join('')+'</div></div>'}
   if(outcomes.length>0){h+='<div class="detail-card"><strong>Key outcomes</strong><div style="margin-top:8px">'+outcomes.map(o=>'<div style="margin:6px 0"><span style="font-size:12px;font-weight:600">'+esc(o.label)+'</span><span style="font-size:11px;color:var(--muted);margin-left:8px">'+esc(o.year)+'</span><p style="font-size:12px;margin:2px 0 0">'+esc(o.description)+'</p></div>').join('')+'</div></div>'}
@@ -179,6 +207,48 @@ function renderSidebars(){
 }
 
 function updateTooltip(mx,my){const r=canvas.parentElement.getBoundingClientRect();if(state.hoveredNode){tooltip.innerHTML='<strong>'+esc(state.hoveredNode.label)+'</strong><div style="margin-top:6px;color:var(--muted)">'+esc(state.hoveredNode.excerpt)+'</div>'}else if(state.hoveredEdge){const a=nodesById[state.hoveredEdge.source],b=nodesById[state.hoveredEdge.target];tooltip.innerHTML='<strong>'+esc(a.label)+' \\u2194 '+esc(b.label)+'</strong><div style="margin-top:6px;color:var(--muted)">'+esc(state.hoveredEdge.excerpt)+'</div>'}else{tooltip.classList.remove('visible');return}tooltip.style.left=Math.min(mx+18,r.width-330)+'px';tooltip.style.top=Math.min(my+18,r.height-120)+'px';tooltip.classList.add('visible')}
+
+const PAT_ACCENTS=['var(--accent)','var(--accent2)','var(--strategic)','var(--warn)','var(--technical)','var(--reflective)','var(--macro)','var(--good)'];
+function mdInline(t){return t.replace(/\\*\\*(.+?)\\*\\*/g,'<strong style="color:var(--text);font-weight:600">$1</strong>').replace(/\\*(.+?)\\*/g,'<em style="color:var(--accent2);font-style:italic">$1</em>')}
+function mdToHtml(md){
+  const lines=md.split('\\n');const sections=[];let cur=null;
+  for(const line of lines){
+    const h4=line.match(/^#{4,}\\s+(.+)/);const h3=line.match(/^###\\s+(.+)/);const h2=line.match(/^##\\s+(.+)/);const h1=line.match(/^#\\s+(.+)/);
+    if(h4||h3||h2||h1){if(cur)sections.push(cur);cur={level:h4?3:h3?3:h2?2:1,heading:(h4?h4[1]:h3?h3[1]:h2?h2[1]:h1[1]).trim(),body:[]};}
+    else if(/^---+\\s*$/.test(line.trim())){}
+    else{if(!cur)cur={level:0,heading:'',body:[]};cur.body.push(line);}
+  }
+  if(cur)sections.push(cur);
+  let out='';
+  sections.forEach((s,si)=>{
+    const accent=PAT_ACCENTS[si%PAT_ACCENTS.length];
+    const bodyHtml=renderMdBody(s.body);
+    if(s.level===1){out+='<div class="pat-section"><div class="pat-h1">'+esc(s.heading)+'</div>'+(bodyHtml?'<div class="pat-body">'+bodyHtml+'</div>':'')+'</div>';}
+    else if(s.level===2){out+='<div class="pat-h2-card" style="border-left:3px solid '+accent+'"><div class="pat-h2-title"><span class="pat-h2-dot" style="background:'+accent+'"></span>'+esc(s.heading)+'</div>'+(bodyHtml?'<div class="pat-body" style="padding-left:16px;margin-top:10px">'+bodyHtml+'</div>':'')+'</div>';}
+    else if(s.level===3){out+='<div class="pat-h3-card"><div class="pat-h3-title" style="color:'+accent+'">'+esc(s.heading)+'</div>'+(bodyHtml?'<div class="pat-body">'+bodyHtml+'</div>':'')+'</div>';}
+    else if(bodyHtml){out+='<div class="pat-body">'+bodyHtml+'</div>';}
+  });
+  return out;
+}
+function renderMdBody(lines){
+  let i=0;while(i<lines.length&&lines[i].trim()==='')i++;
+  let end=lines.length-1;while(end>i&&lines[end].trim()==='')end--;
+  const t=lines.slice(i,end+1);let h='';i=0;
+  while(i<t.length){
+    if(/^\\s*[-*]\\s/.test(t[i])){h+='<ul>';while(i<t.length&&/^\\s*[-*]\\s/.test(t[i])){h+='<li>'+mdInline(t[i].replace(/^\\s*[-*]\\s/,''))+'</li>';i++;}h+='</ul>';continue;}
+    if(/^\\s*\\d+[.)]\\s/.test(t[i])){h+='<ol>';let n=1;while(i<t.length&&/^\\s*\\d+[.)]\\s/.test(t[i])){const m=t[i].match(/^\\s*\\d+[.)]\\s(.*)/);h+='<li><span class="num">'+n+'</span><span>'+mdInline(m[1])+'</span></li>';i++;n++;}h+='</ol>';continue;}
+    if(t[i].trim()===''){i++;continue;}
+    h+='<p>'+mdInline(t[i])+'</p>';i++;
+  }
+  return h;
+}
+function showPatterns(){
+  let el=document.getElementById('patternsOverlay');
+  if(!el){el=document.createElement('div');el.id='patternsOverlay';el.className='patterns-overlay';document.body.appendChild(el);}
+  el.style.display='block';
+  el.innerHTML='<div class="pat-bg"></div><div class="pat-inner"><a class="pat-back" onclick="hidePatterns()">\\u2190 Back to map</a><div style="margin-bottom:32px"><div class="pat-label">Pattern Analysis</div><div class="pat-title">'+esc(personName)+'</div><div class="pat-sub">Thinking, behavior, and decision-making structures</div><div class="pat-sep"></div></div>'+mdToHtml(patternDetails)+'</div>';
+}
+function hidePatterns(){const el=document.getElementById('patternsOverlay');if(el)el.style.display='none';}
 
 function renderAll(){monthLabel.textContent=months[state.monthIndex];renderSidebars();if(!state.selected)showOverview();else if(state.selected.source)showEdge(state.selected);else showNode(state.selected);renderArch();draw()}
 

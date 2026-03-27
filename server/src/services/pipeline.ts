@@ -1,7 +1,7 @@
 import { normalizeName } from '../utils/normalize.js';
 import { validateGeneratedData } from '../utils/validate.js';
 import { verifyPerson } from './wikipedia.js';
-import { generateCognitiveMap } from './openai.js';
+import { generateCognitiveMap, generatePatternDetails } from './openai.js';
 import {
   findPersonByNormalizedName,
   insertPerson,
@@ -41,8 +41,13 @@ export async function generatePerson(name: string): Promise<GenerateResponse> {
     throw new Error(`"${wiki.title}" does not appear to be a person. Only real humans can be mapped.`);
   }
 
-  // Generate via OpenAI
-  const { data, durationMs } = await generateCognitiveMap(wiki.title, wiki.summary);
+  // Generate via OpenAI — main graph + pattern details in parallel
+  const [mapResult, patternDetailsResult] = await Promise.all([
+    generateCognitiveMap(wiki.title, wiki.summary),
+    generatePatternDetails(wiki.title, wiki.summary),
+  ]);
+
+  const { data, durationMs } = mapResult;
 
   if (!validateGeneratedData(data)) {
     throw new Error('Generated data failed validation. Please try again.');
@@ -59,11 +64,11 @@ export async function generatePerson(name: string): Promise<GenerateResponse> {
     auto_group: data.profile.auto_group,
   });
 
-  // Merge cognitive architecture and patterns into context
+  // Merge cognitive architecture and pattern details into context
   const contextWithArch = {
     ...data.context,
     cognitive_architecture: data.profile.cognitive_architecture,
-    patterns: data.profile.patterns,
+    pattern_details: patternDetailsResult.text,
   };
 
   // Store version
@@ -98,10 +103,13 @@ export async function regeneratePerson(personId: number): Promise<GenerateRespon
     throw new Error('Person not found');
   }
 
-  const { data, durationMs } = await generateCognitiveMap(
-    person.name,
-    person.wiki_summary || ''
-  );
+  const wikiSummary = person.wiki_summary || '';
+  const [mapResult, patternDetailsResult] = await Promise.all([
+    generateCognitiveMap(person.name, wikiSummary),
+    generatePatternDetails(person.name, wikiSummary),
+  ]);
+
+  const { data, durationMs } = mapResult;
 
   if (!validateGeneratedData(data)) {
     throw new Error('Generated data failed validation. Please try again.');
@@ -110,7 +118,7 @@ export async function regeneratePerson(personId: number): Promise<GenerateRespon
   const regenContext = {
     ...data.context,
     cognitive_architecture: data.profile.cognitive_architecture,
-    patterns: data.profile.patterns,
+    pattern_details: patternDetailsResult.text,
   };
 
   const nextVersion = getNextVersion(personId);

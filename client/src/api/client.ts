@@ -108,22 +108,6 @@ export interface CognitiveArchitecture {
   behavioural_signature: string;
 }
 
-export interface PatternItem {
-  pattern: string;
-  description: string;
-  strength: number;
-  samples?: string[];
-  impact?: string;
-  outcome?: string;
-  influence?: string;
-}
-
-export interface Patterns {
-  thinking: PatternItem[];
-  speaking: PatternItem[];
-  behavior: PatternItem[];
-}
-
 export interface ContextData {
   places: Array<{
     place: string;
@@ -145,7 +129,7 @@ export interface ContextData {
     type: string;
   }>;
   cognitive_architecture?: CognitiveArchitecture;
-  patterns?: Patterns;
+  pattern_details?: string;
 }
 
 export interface GenerateResponse {

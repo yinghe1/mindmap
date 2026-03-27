@@ -14,8 +14,8 @@ import { PatternsView } from './components/detail/PatternsView';
 export default function App() {
   const screen = useUiStore((s) => s.screen);
   const theme = useUiStore((s) => s.theme);
-  const showPatterns = useUiStore((s) => s.showPatterns);
-  const setShowPatterns = useUiStore((s) => s.setShowPatterns);
+  const overlay = useUiStore((s) => s.overlay);
+  const navigateTo = useUiStore((s) => s.navigateTo);
   const context = useGraphStore((s) => s.context);
 
   useEffect(() => {
@@ -41,10 +41,10 @@ export default function App() {
         }
         detail={<DetailPanel />}
       />
-      {showPatterns && (
+      {overlay === 'patterns' && (
         <PatternsView
-          patterns={context?.patterns ?? null}
-          onBack={() => setShowPatterns(false)}
+          patternDetails={context?.pattern_details ?? null}
+          onBack={() => navigateTo(null)}
         />
       )}
     </>

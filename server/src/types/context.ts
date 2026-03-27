@@ -41,4 +41,5 @@ export interface ContextData {
   influences: Influence[];
   sources: Source[];
   cognitive_architecture?: CognitiveArchitecture;
+  pattern_details?: string;
 }

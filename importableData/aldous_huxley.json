@@ -1,0 +1,594 @@
+{
+  "person": {
+    "id": 13,
+    "name": "Aldous Huxley",
+    "name_normalized": "aldous_huxley",
+    "wiki_url": "https://en.wikipedia.org/wiki/Aldous_Huxley",
+    "wiki_title": "Aldous Huxley",
+    "wiki_summary": "Aldous Leonard Huxley was an English writer and philosopher. His bibliography spans nearly 50 books, including non-fiction works, as well as essays, narratives and poems.",
+    "wiki_verified": 1,
+    "auto_group": "Writer",
+    "created_at": "2026-03-27 01:17:43",
+    "updated_at": "2026-03-27 01:17:43"
+  },
+  "version": {
+    "id": 20,
+    "person_id": 13,
+    "version": 1,
+    "graph_data": "{\"nodes\":[{\"id\":\"early_life\",\"label\":\"Early Life and Education\",\"importance\":0.7,\"momentum\":0.4,\"bridge\":0.5,\"cluster\":\"reflective\",\"role\":\"Origin\",\"subthemes\":[\"family\",\"education\",\"health\"],\"trend\":[0.8,0.6,0.4,0.2],\"x\":0.2,\"y\":0.4,\"excerpt\":\"Born into a prominent intellectual family, Huxley's early life was marked by rigorous education and personal health challenges.\"},{\"id\":\"literary_works\",\"label\":\"Literary Works\",\"importance\":1,\"momentum\":0.8,\"bridge\":0.7,\"cluster\":\"technical\",\"role\":\"Core\",\"subthemes\":[\"novels\",\"essays\",\"poetry\"],\"trend\":[0.6,0.8,1,0.9],\"x\":0.3,\"y\":0.5,\"excerpt\":\"Huxley's extensive body of work includes influential novels, essays, and poetry, reflecting his deep engagement with contemporary issues.\"},{\"id\":\"philosophy\",\"label\":\"Philosophical Exploration\",\"importance\":0.9,\"momentum\":0.7,\"bridge\":0.6,\"cluster\":\"reflective\",\"role\":\"Core\",\"subthemes\":[\"humanism\",\"existentialism\",\"ethics\"],\"trend\":[0.4,0.6,0.8,0.9],\"x\":0.4,\"y\":0.6,\"excerpt\":\"Huxley’s philosophical inquiries were central to his thinking, often focusing on the ethical implications of scientific and social progress.\"},{\"id\":\"scientific_inquiry\",\"label\":\"Scientific Inquiry\",\"importance\":0.8,\"momentum\":0.6,\"bridge\":0.5,\"cluster\":\"technical\",\"role\":\"Bridge\",\"subthemes\":[\"psychology\",\"neuroscience\",\"biology\"],\"trend\":[0.3,0.4,0.7,0.8],\"x\":0.4,\"y\":0.5,\"excerpt\":\"Huxley's interest in science informed his writing, particularly in exploring the boundaries of human consciousness and the mind.\"},{\"id\":\"social_critique\",\"label\":\"Social Critique\",\"importance\":0.9,\"momentum\":0.9,\"bridge\":0.7,\"cluster\":\"strategic\",\"role\":\"Core\",\"subthemes\":[\"dystopia\",\"technology\",\"society\"],\"trend\":[0.5,0.7,0.9,1],\"x\":0.5,\"y\":0.5,\"excerpt\":\"Huxley’s critiques of society often highlighted the dangers of unchecked technological advancement and authoritarianism.\"},{\"id\":\"spirituality\",\"label\":\"Spiritual and Mystical Interests\",\"importance\":0.6,\"momentum\":0.7,\"bridge\":0.4,\"cluster\":\"reflective\",\"role\":\"Emergent\",\"subthemes\":[\"mysticism\",\"psychedelics\",\"meditation\"],\"trend\":[0.2,0.3,0.5,0.7],\"x\":0.5,\"y\":0.6,\"excerpt\":\"Later in life, Huxley explored spirituality and mysticism, seeking to understand consciousness beyond material science.\"},{\"id\":\"cultural_impact\",\"label\":\"Cultural and Historical Impact\",\"importance\":0.8,\"momentum\":0.9,\"bridge\":0.8,\"cluster\":\"macro\",\"role\":\"Bridge\",\"subthemes\":[\"influence\",\"legacy\",\"thought leader\"],\"trend\":[0.3,0.5,0.8,1],\"x\":0.6,\"y\":0.7,\"excerpt\":\"Huxley’s work left a lasting impact on literature and philosophy, influencing generations of thinkers and writers.\"},{\"id\":\"family_legacy\",\"label\":\"Family Legacy and Connections\",\"importance\":0.5,\"momentum\":0.4,\"bridge\":0.3,\"cluster\":\"reflective\",\"role\":\"Foundation\",\"subthemes\":[\"intellectual\",\"network\",\"support\"],\"trend\":[0.5,0.4,0.3,0.2],\"x\":0.3,\"y\":0.4,\"excerpt\":\"Huxley’s family background provided a rich intellectual environment that shaped his early worldview.\"},{\"id\":\"political_views\",\"label\":\"Political Views and Activism\",\"importance\":0.7,\"momentum\":0.6,\"bridge\":0.5,\"cluster\":\"strategic\",\"role\":\"Emergent\",\"subthemes\":[\"pacifism\",\"freedom\",\"critique\"],\"trend\":[0.4,0.5,0.6,0.7],\"x\":0.6,\"y\":0.5,\"excerpt\":\"Huxley expressed strong political opinions, often advocating for pacifism and critiquing totalitarian regimes.\"},{\"id\":\"educational_influence\",\"label\":\"Educational Influence\",\"importance\":0.6,\"momentum\":0.5,\"bridge\":0.6,\"cluster\":\"macro\",\"role\":\"Bridge\",\"subthemes\":[\"lectures\",\"mentorship\",\"public speaking\"],\"trend\":[0.3,0.5,0.6,0.7],\"x\":0.7,\"y\":0.7,\"excerpt\":\"Beyond his writing, Huxley influenced education and public thought through lectures and mentorship.\"}],\"edges\":[{\"source\":\"early_life\",\"target\":\"literary_works\",\"weight\":0.7,\"recentChange\":0.1,\"type\":\"strong_stable\",\"shared\":[\"education\",\"narratives\"],\"excerpt\":\"Huxley's rigorous education and early family influence significantly shaped his literary pursuits.\"},{\"source\":\"philosophy\",\"target\":\"literary_works\",\"weight\":0.8,\"recentChange\":0.1,\"type\":\"strong_rising\",\"shared\":[\"ethics\",\"narratives\"],\"excerpt\":\"Philosophical themes deeply influenced the content and themes of Huxley's literary works.\"},{\"source\":\"scientific_inquiry\",\"target\":\"philosophy\",\"weight\":0.6,\"recentChange\":0.1,\"type\":\"stable\",\"shared\":[\"consciousness\",\"humanism\"],\"excerpt\":\"Huxley's engagement with scientific ideas informed his philosophical explorations, especially concerning human consciousness.\"},{\"source\":\"social_critique\",\"target\":\"literary_works\",\"weight\":0.9,\"recentChange\":0.2,\"type\":\"strong_stable\",\"shared\":[\"dystopia\",\"society\"],\"excerpt\":\"Huxley’s critical view of society was a driving force behind many of his novels and essays.\"},{\"source\":\"spirituality\",\"target\":\"philosophy\",\"weight\":0.5,\"recentChange\":0.2,\"type\":\"rising\",\"shared\":[\"consciousness\",\"mysticism\"],\"excerpt\":\"His later interest in spirituality added a mystical dimension to his philosophical inquiries.\"},{\"source\":\"cultural_impact\",\"target\":\"social_critique\",\"weight\":0.8,\"recentChange\":0.1,\"type\":\"strong_rising\",\"shared\":[\"influence\",\"society\"],\"excerpt\":\"Huxley's cultural impact is closely tied to his incisive critiques of society and technology.\"},{\"source\":\"family_legacy\",\"target\":\"educational_influence\",\"weight\":0.4,\"recentChange\":0,\"type\":\"light\",\"shared\":[\"network\",\"mentorship\"],\"excerpt\":\"His family's intellectual environment laid a foundation for Huxley's later educational influence.\"},{\"source\":\"political_views\",\"target\":\"social_critique\",\"weight\":0.7,\"recentChange\":0.1,\"type\":\"stable\",\"shared\":[\"freedom\",\"critique\"],\"excerpt\":\"Huxley's political views often intersected with his critiques of societal structures.\"},{\"source\":\"literary_works\",\"target\":\"cultural_impact\",\"weight\":0.9,\"recentChange\":0.2,\"type\":\"strong_rising\",\"shared\":[\"influence\",\"legacy\"],\"excerpt\":\"Huxley's literary contributions form the core of his enduring cultural and historical impact.\"},{\"source\":\"educational_influence\",\"target\":\"political_views\",\"weight\":0.5,\"recentChange\":0,\"type\":\"light\",\"shared\":[\"public speaking\",\"activism\"],\"excerpt\":\"Through lectures and public speaking, Huxley shaped political discourse and activism.\"},{\"source\":\"scientific_inquiry\",\"target\":\"spirituality\",\"weight\":0.4,\"recentChange\":0.1,\"type\":\"rising\",\"shared\":[\"consciousness\",\"exploration\"],\"excerpt\":\"Huxley's scientific interests eventually led him to explore spiritual dimensions of consciousness.\"},{\"source\":\"early_life\",\"target\":\"family_legacy\",\"weight\":0.5,\"recentChange\":0,\"type\":\"stable\",\"shared\":[\"family\",\"education\"],\"excerpt\":\"His early life and education were deeply intertwined with his family's intellectual legacy.\"},{\"source\":\"philosophy\",\"target\":\"political_views\",\"weight\":0.6,\"recentChange\":0.1,\"type\":\"stable\",\"shared\":[\"ethics\",\"freedom\"],\"excerpt\":\"Huxley’s philosophical outlook informed his political views, especially concerning freedom and ethics.\"}],\"outcomes\":[{\"id\":\"brave_new_world\",\"label\":\"Brave New World\",\"year\":\"1932\",\"category\":\"publication\",\"description\":\"Aldous Huxley's dystopian novel 'Brave New World' critiques the potential consequences of advanced technology and loss of individuality.\"},{\"id\":\"doors_of_perception\",\"label\":\"The Doors of Perception\",\"year\":\"1954\",\"category\":\"publication\",\"description\":\"This influential essay details Huxley's experiences with mescaline, exploring perceptions of reality and consciousness.\"},{\"id\":\"island_publication\",\"label\":\"Publication of 'Island'\",\"year\":\"1962\",\"category\":\"publication\",\"description\":\"'Island' is Huxley's utopian counterpart to 'Brave New World', exploring holistic and harmonious societal living.\"}],\"outcome_paths\":[{\"outcome_id\":\"brave_new_world\",\"node_ids\":[\"social_critique\",\"literary_works\",\"cultural_impact\"],\"description\":\"Huxley's critical view of society and technological advancement directly influenced the creation of 'Brave New World'.\"},{\"outcome_id\":\"doors_of_perception\",\"node_ids\":[\"scientific_inquiry\",\"spirituality\",\"philosophy\"],\"description\":\"Huxley's exploration of consciousness through scientific and spiritual lenses culminated in this essay.\"},{\"outcome_id\":\"island_publication\",\"node_ids\":[\"literary_works\",\"philosophy\",\"spirituality\"],\"description\":\"'Island' reflects Huxley's philosophical and spiritual evolution, presenting an alternative societal vision.\"}]}",
+    "context_data": "{\"places\":[{\"place\":\"Godalming, Surrey\",\"lat\":51.1841,\"lng\":-0.6128,\"start_year\":1894,\"end_year\":1908,\"description\":\"Huxley was born and spent part of his early childhood here.\"},{\"place\":\"Oxford\",\"lat\":51.752,\"lng\":-1.2577,\"start_year\":1913,\"end_year\":1916,\"description\":\"Huxley studied at Balliol College, Oxford, where he began his literary career.\"},{\"place\":\"Los Angeles\",\"lat\":34.0522,\"lng\":-118.2437,\"start_year\":1937,\"end_year\":1963,\"description\":\"Huxley spent his later years in Los Angeles, where he continued writing and exploring new philosophical ideas.\"}],\"influences\":[{\"name\":\"Julian Huxley\",\"type\":\"personal\",\"direction\":\"influenced_person\",\"description\":\"Aldous' brother, Julian, was a biologist whose scientific ideas influenced Aldous' interest in science.\"},{\"name\":\"George Orwell\",\"type\":\"literary\",\"direction\":\"person_influenced\",\"description\":\"Orwell’s dystopian themes show the influence of Huxley's explorations of societal structures.\"},{\"name\":\"Gerald Heard\",\"type\":\"philosophical\",\"direction\":\"influenced_person\",\"description\":\"Heard was a philosopher and writer who influenced Huxley’s interest in spiritual and mystical ideas.\"},{\"name\":\"T.S. Eliot\",\"type\":\"literary\",\"direction\":\"influenced_person\",\"description\":\"Huxley's contemporary, Eliot, shared mutual literary influence and critique.\"}],\"sources\":[{\"title\":\"Aldous Huxley - Wikipedia\",\"url\":\"https://en.wikipedia.org/wiki/Aldous_Huxley\",\"type\":\"wikipedia\"},{\"title\":\"The Doors of Perception\",\"url\":\"https://en.wikipedia.org/wiki/The_Doors_of_Perception\",\"type\":\"wikipedia\"},{\"title\":\"Brave New World\",\"url\":\"https://en.wikipedia.org/wiki/Brave_New_World\",\"type\":\"wikipedia\"}],\"cognitive_architecture\":{\"summary\":\"Aldous Huxley's cognitive decision-making architecture is rooted in empirical curiosity, driving him to explore complex philosophical and social questions through a lens of artistic and scientific inquiry. His process often begins with observing social or technological phenomena, filtering these through a philosophical lens, and then expressing insights through literary work.\",\"primary_driver\":\"Empirical curiosity\",\"decision_path\":[{\"stage\":\"Observation\",\"description\":\"Huxley begins by closely observing societal and technological developments.\",\"branches\":[\"Curiosity\",\"Skepticism\"]},{\"stage\":\"Philosophical Filter\",\"description\":\"He filters observations through philosophical questioning and ethical considerations.\",\"branches\":[\"Humanism\",\"Pessimism\"]},{\"stage\":\"Creative Synthesis\",\"description\":\"Huxley synthesizes his insights into creative narratives or essays.\",\"branches\":[\"Fiction\",\"Non-fiction\"]},{\"stage\":\"Public Engagement\",\"description\":\"He engages with the public through published works that challenge societal norms.\",\"branches\":[\"Critique\",\"Advocacy\"]}],\"cognitive_tensions\":[{\"pole_a\":\"Humanism\",\"pole_b\":\"Pessimism\",\"description\":\"Huxley often wrestled with the potential for human progress against the backdrop of societal flaws and dystopian futures.\"},{\"pole_a\":\"Artistic Expression\",\"pole_b\":\"Scientific Inquiry\",\"description\":\"He balanced between crafting imaginative literature and engaging with scientific thought to explore human consciousness.\"}],\"behavioural_signature\":\"Huxley's characteristic pattern is an intellectual exploration that oscillates between imaginative literature and critical essays, often highlighting the tension between human potential and societal failures.\"},\"pattern_details\":\"# Aldous Huxley: Pattern Analysis\\n\\n## Step 1 — Signal Extraction\\n\\n### Language\\n- **Vocabulary Choices**: Huxley's language was both expansive and precise, often incorporating scientific terms and philosophical concepts. He favored a rich tapestry of words that conveyed deep meanings.\\n- **Sentence Structure**: He used complex, multi-layered sentences that often reflected his analytical thought process.\\n- **Rhetorical Strategies**: Huxley frequently employed satire, irony, and allegory to critique society and illustrate philosophical ideas.\\n\\n### Behavior\\n- **Recurring Actions**: Publishing a diverse array of works, engaging in intellectual discourse, and exploring various philosophical and spiritual themes.\\n- **Rituals**: Consistent writing and public speaking engagements.\\n- **Characteristic Responses**: Questioning societal norms and advocating for intellectual and spiritual exploration.\\n\\n### Decisions\\n- **Choices**: Chose to write both fiction and non-fiction, exploring themes of dystopia, human potential, and consciousness.\\n- **Avoidance**: Steered away from simplistic narratives and superficial analyses.\\n- **Prioritization**: Focused on intellectual exploration and societal critique.\\n\\n### Attention\\n- **Focus**: Concentrated on themes of dystopia, consciousness, and spirituality.\\n- **Ignored**: Did not dwell on trivial or purely entertainment-driven topics.\\n- **Curiosity Patterns**: Consistently investigated the human condition, spirituality, and future societal trends.\\n\\n### Emotion\\n- **Expression Patterns**: Emotionally expressive through his writing, often using characters and narratives to explore complex emotions.\\n- **Triggers**: Injustice, ignorance, and societal complacency appeared to trigger strong responses.\\n- **Regulation**: Channeled emotions into articulate critiques and philosophical explorations.\\n\\n### Curiosity\\n- **Questions Asked**: Explored questions about the future of humanity, the nature of consciousness, and the impact of technology on society.\\n- **Domains Explored**: Philosophy, science, literature, and spirituality.\\n\\n## Step 2 — Pattern Detection\\n\\n### Recurring Patterns\\n#### Repetition\\n- **Pattern**: Intellectual and philosophical exploration.\\n- **Examples**: \\\"Brave New World\\\" (1932) critiques industrial society's impact on individuality; lectures on human potential.\\n- **Why it Works**: Appeals to readers' intellectual curiosity and desire for deeper understanding of societal trends.\\n\\n#### Preference\\n- **Systematic Biases**: Bias toward complex, multi-dimensional narratives.\\n- **Examples**: Consistently chose to write essays and novels that explore philosophical and dystopian themes.\\n- **Why it Works**: Engages audiences seeking thought-provoking material.\\n\\n#### Avoidance\\n- **Steered Away**: Simplistic or purely entertainment-driven content.\\n- **Examples**: No known works fit the pure entertainment genre; his narratives often carry deeper meanings.\\n- **Why it Works**: Aligns with an audience looking for substantive and reflective content.\\n\\n#### Asymmetry\\n- **Differed from Norms**: His works often defied conventional storytelling, favoring philosophical depth over plot.\\n- **Examples**: \\\"Point Counter Point\\\" (1928) uses a non-linear narrative to explore multiple perspectives.\\n- **Why it Works**: Challenges readers to think critically and explore multiple viewpoints.\\n\\n## Step 3 — Cross-Domain Synthesis\\n\\n### Optimization Pattern\\n- **Improvement and Refinement**: Huxley continually refined his philosophical and spiritual ideas through his writing.\\n- **Examples**: Transition from early satirical works to later spiritual explorations in \\\"The Perennial Philosophy\\\" (1945).\\n- **Why it Amplifies Influence**: Shows intellectual growth and depth, appealing to a mature audience seeking development.\\n\\n### Exploration Pattern\\n- **Seek Novelty**: Explores new themes and ideas in each work.\\n- **Examples**: From dystopian futures in \\\"Brave New World\\\" to spiritual insights in \\\"The Doors of Perception\\\" (1954).\\n- **Why it Amplifies Influence**: Keeps his work fresh and relevant, attracting diverse readerships.\\n\\n### Control Pattern\\n- **Manage Uncertainty**: Uses structured narratives and philosophical frameworks to impose order on complex ideas.\\n- **Examples**: \\\"Island\\\" (1962) presents a utopian vision as a counterpoint to his dystopian works.\\n- **Why it Amplifies Influence**: Provides readers with frameworks to understand and navigate complex societal issues.\\n\\n### Expression Pattern\\n- **Communicate Identity and Values**: His works consistently reflect his values and philosophical beliefs.\\n- **Examples**: Satirical critiques in \\\"Crome Yellow\\\" (1921) and spiritual explorations in later essays.\\n- **Why it Amplifies Influence**: Creates a cohesive narrative identity that resonates with readers.\\n\\n## Step 4 — Invariant vs Contextual\\n\\n### Stable Patterns\\n- **Intellectual Exploration**: Present in all contexts, deeply embedded in his writing and public speaking.\\n\\n### Triggered Patterns\\n- **Satire and Critique**: Particularly activated in response to societal and political issues.\\n\\n## Step 5 — Pattern Interaction Map\\n\\n### Reinforcing Loops\\n- **Intellectual Exploration and Expression Patterns**: These patterns reinforce each other as exploration leads to new expressions, which in turn open new avenues for exploration.\\n\\n### Conflicts\\n- **None Identified**: His patterns show a consistent alignment with his philosophical and intellectual values.\\n\\n### Gating\\n- **Control Pattern**: Enables the expression pattern by providing structured narratives.\\n\\n## Step 6 — Temporal Trajectory\\n\\n### Emerging\\n- **Spiritual Exploration**: Grew stronger in later works and public discourses.\\n\\n### Stable\\n- **Intellectual Critique**: Consistently present from early works to later essays.\\n\\n### Decaying\\n- **None Identified**: Most patterns have remained consistent or evolved naturally.\\n\\n## Step 7 — Stress Test\\n\\n### Pressure\\n- **Intellectual Critique Intensifies**: Under societal turmoil, his critiques become sharper.\\n\\n### Uncertainty\\n- **Control Pattern Adapts**: Uses philosophical frameworks to manage uncertainty.\\n\\n### Conflict\\n- **Satirical Critique Dominates**: During interpersonal or societal conflict, satire becomes more prominent.\\n\\n### Failure\\n- **Reorganization and Reflection**: Uses setbacks as opportunities for deeper philosophical reflection.\\n\\n## Step 8 — Anomaly Detection\\n\\n### Contradictions\\n- **None Identified**: Patterns align consistently with known behaviors and writings.\\n\\n### Break Patterns\\n- **None Identified**: No significant deviations from established patterns noted.\\n\\n## Step 9 — Adversarial Validation\\n\\n### Alternative Interpretations\\n- **Philosophical Exploration as Avoidance**: Could be seen as avoiding direct action or political engagement.\\n- **Confidence Scoring**: High confidence in identified patterns due to consistent evidence across works and public statements.\\n\\n## Step 10 — Meta Synthesis\\n\\n### Core System\\n- **Intellectual and Philosophical Exploration**: The fundamental architecture driving all other patterns.\\n\\n### Top Patterns\\n1. **Intellectual Exploration**\\n   - Real Samples: \\\"Brave New World,\\\" lectures on human potential.\\n   - Why it Works: Engages curiosity and intellectual growth, creating a lasting impact on readers.\\n\\n2. **Satirical Critique**\\n   - Real Samples: \\\"Crome Yellow,\\\" \\\"Point Counter Point.\\\"\\n   - Why it Works: Provides sharp societal commentary, resonating with audiences seeking critique of norms.\\n\\n3. **Spiritual Inquiry**\\n   - Real Samples: \\\"The Perennial Philosophy,\\\" \\\"The Doors of Perception.\\\"\\n   - Why it Works: Meets the need for spiritual understanding, broadening his appeal.\\n\\n4. **Narrative Complexity**\\n   - Real Samples: \\\"Point Counter Point,\\\" multi-layered essays.\\n   - Why it Works: Challenges readers to think deeply, enhancing intellectual engagement.\\n\\n5. **Control Through Structure**\\n   - Real Samples: \\\"Island,\\\" structured philosophical essays.\\n   - Why it Works: Offers frameworks for understanding complexity, appealing to those seeking order.\\n\\n### Reinforcement Loops\\n- **Exploration and Expression**: Intellectual exploration fuels expression, which in turn fosters further exploration.\\n\\n### Constraints\\n- **Complexity**: May limit audience to those willing to engage deeply.\\n\\n### Leverage Points\\n- **Simplification**: Simplifying narratives could broaden appeal without sacrificing depth.\\n\\n### Confidence\\n- **Overall**: High certainty in the core and top patterns due to robust evidence and consistent alignment with known data.\"}",
+    "node_count": 10,
+    "edge_count": 13,
+    "model_used": "gpt-4o",
+    "prompt_version": "1.0",
+    "generation_ms": 36145,
+    "created_at": "2026-03-27 01:17:43"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "early_life",
+        "label": "Early Life and Education",
+        "importance": 0.7,
+        "momentum": 0.4,
+        "bridge": 0.5,
+        "cluster": "reflective",
+        "role": "Origin",
+        "subthemes": [
+          "family",
+          "education",
+          "health"
+        ],
+        "trend": [
+          0.8,
+          0.6,
+          0.4,
+          0.2
+        ],
+        "x": 0.2,
+        "y": 0.4,
+        "excerpt": "Born into a prominent intellectual family, Huxley's early life was marked by rigorous education and personal health challenges."
+      },
+      {
+        "id": "literary_works",
+        "label": "Literary Works",
+        "importance": 1,
+        "momentum": 0.8,
+        "bridge": 0.7,
+        "cluster": "technical",
+        "role": "Core",
+        "subthemes": [
+          "novels",
+          "essays",
+          "poetry"
+        ],
+        "trend": [
+          0.6,
+          0.8,
+          1,
+          0.9
+        ],
+        "x": 0.3,
+        "y": 0.5,
+        "excerpt": "Huxley's extensive body of work includes influential novels, essays, and poetry, reflecting his deep engagement with contemporary issues."
+      },
+      {
+        "id": "philosophy",
+        "label": "Philosophical Exploration",
+        "importance": 0.9,
+        "momentum": 0.7,
+        "bridge": 0.6,
+        "cluster": "reflective",
+        "role": "Core",
+        "subthemes": [
+          "humanism",
+          "existentialism",
+          "ethics"
+        ],
+        "trend": [
+          0.4,
+          0.6,
+          0.8,
+          0.9
+        ],
+        "x": 0.4,
+        "y": 0.6,
+        "excerpt": "Huxley’s philosophical inquiries were central to his thinking, often focusing on the ethical implications of scientific and social progress."
+      },
+      {
+        "id": "scientific_inquiry",
+        "label": "Scientific Inquiry",
+        "importance": 0.8,
+        "momentum": 0.6,
+        "bridge": 0.5,
+        "cluster": "technical",
+        "role": "Bridge",
+        "subthemes": [
+          "psychology",
+          "neuroscience",
+          "biology"
+        ],
+        "trend": [
+          0.3,
+          0.4,
+          0.7,
+          0.8
+        ],
+        "x": 0.4,
+        "y": 0.5,
+        "excerpt": "Huxley's interest in science informed his writing, particularly in exploring the boundaries of human consciousness and the mind."
+      },
+      {
+        "id": "social_critique",
+        "label": "Social Critique",
+        "importance": 0.9,
+        "momentum": 0.9,
+        "bridge": 0.7,
+        "cluster": "strategic",
+        "role": "Core",
+        "subthemes": [
+          "dystopia",
+          "technology",
+          "society"
+        ],
+        "trend": [
+          0.5,
+          0.7,
+          0.9,
+          1
+        ],
+        "x": 0.5,
+        "y": 0.5,
+        "excerpt": "Huxley’s critiques of society often highlighted the dangers of unchecked technological advancement and authoritarianism."
+      },
+      {
+        "id": "spirituality",
+        "label": "Spiritual and Mystical Interests",
+        "importance": 0.6,
+        "momentum": 0.7,
+        "bridge": 0.4,
+        "cluster": "reflective",
+        "role": "Emergent",
+        "subthemes": [
+          "mysticism",
+          "psychedelics",
+          "meditation"
+        ],
+        "trend": [
+          0.2,
+          0.3,
+          0.5,
+          0.7
+        ],
+        "x": 0.5,
+        "y": 0.6,
+        "excerpt": "Later in life, Huxley explored spirituality and mysticism, seeking to understand consciousness beyond material science."
+      },
+      {
+        "id": "cultural_impact",
+        "label": "Cultural and Historical Impact",
+        "importance": 0.8,
+        "momentum": 0.9,
+        "bridge": 0.8,
+        "cluster": "macro",
+        "role": "Bridge",
+        "subthemes": [
+          "influence",
+          "legacy",
+          "thought leader"
+        ],
+        "trend": [
+          0.3,
+          0.5,
+          0.8,
+          1
+        ],
+        "x": 0.6,
+        "y": 0.7,
+        "excerpt": "Huxley’s work left a lasting impact on literature and philosophy, influencing generations of thinkers and writers."
+      },
+      {
+        "id": "family_legacy",
+        "label": "Family Legacy and Connections",
+        "importance": 0.5,
+        "momentum": 0.4,
+        "bridge": 0.3,
+        "cluster": "reflective",
+        "role": "Foundation",
+        "subthemes": [
+          "intellectual",
+          "network",
+          "support"
+        ],
+        "trend": [
+          0.5,
+          0.4,
+          0.3,
+          0.2
+        ],
+        "x": 0.3,
+        "y": 0.4,
+        "excerpt": "Huxley’s family background provided a rich intellectual environment that shaped his early worldview."
+      },
+      {
+        "id": "political_views",
+        "label": "Political Views and Activism",
+        "importance": 0.7,
+        "momentum": 0.6,
+        "bridge": 0.5,
+        "cluster": "strategic",
+        "role": "Emergent",
+        "subthemes": [
+          "pacifism",
+          "freedom",
+          "critique"
+        ],
+        "trend": [
+          0.4,
+          0.5,
+          0.6,
+          0.7
+        ],
+        "x": 0.6,
+        "y": 0.5,
+        "excerpt": "Huxley expressed strong political opinions, often advocating for pacifism and critiquing totalitarian regimes."
+      },
+      {
+        "id": "educational_influence",
+        "label": "Educational Influence",
+        "importance": 0.6,
+        "momentum": 0.5,
+        "bridge": 0.6,
+        "cluster": "macro",
+        "role": "Bridge",
+        "subthemes": [
+          "lectures",
+          "mentorship",
+          "public speaking"
+        ],
+        "trend": [
+          0.3,
+          0.5,
+          0.6,
+          0.7
+        ],
+        "x": 0.7,
+        "y": 0.7,
+        "excerpt": "Beyond his writing, Huxley influenced education and public thought through lectures and mentorship."
+      }
+    ],
+    "edges": [
+      {
+        "source": "early_life",
+        "target": "literary_works",
+        "weight": 0.7,
+        "recentChange": 0.1,
+        "type": "strong_stable",
+        "shared": [
+          "education",
+          "narratives"
+        ],
+        "excerpt": "Huxley's rigorous education and early family influence significantly shaped his literary pursuits."
+      },
+      {
+        "source": "philosophy",
+        "target": "literary_works",
+        "weight": 0.8,
+        "recentChange": 0.1,
+        "type": "strong_rising",
+        "shared": [
+          "ethics",
+          "narratives"
+        ],
+        "excerpt": "Philosophical themes deeply influenced the content and themes of Huxley's literary works."
+      },
+      {
+        "source": "scientific_inquiry",
+        "target": "philosophy",
+        "weight": 0.6,
+        "recentChange": 0.1,
+        "type": "stable",
+        "shared": [
+          "consciousness",
+          "humanism"
+        ],
+        "excerpt": "Huxley's engagement with scientific ideas informed his philosophical explorations, especially concerning human consciousness."
+      },
+      {
+        "source": "social_critique",
+        "target": "literary_works",
+        "weight": 0.9,
+        "recentChange": 0.2,
+        "type": "strong_stable",
+        "shared": [
+          "dystopia",
+          "society"
+        ],
+        "excerpt": "Huxley’s critical view of society was a driving force behind many of his novels and essays."
+      },
+      {
+        "source": "spirituality",
+        "target": "philosophy",
+        "weight": 0.5,
+        "recentChange": 0.2,
+        "type": "rising",
+        "shared": [
+          "consciousness",
+          "mysticism"
+        ],
+        "excerpt": "His later interest in spirituality added a mystical dimension to his philosophical inquiries."
+      },
+      {
+        "source": "cultural_impact",
+        "target": "social_critique",
+        "weight": 0.8,
+        "recentChange": 0.1,
+        "type": "strong_rising",
+        "shared": [
+          "influence",
+          "society"
+        ],
+        "excerpt": "Huxley's cultural impact is closely tied to his incisive critiques of society and technology."
+      },
+      {
+        "source": "family_legacy",
+        "target": "educational_influence",
+        "weight": 0.4,
+        "recentChange": 0,
+        "type": "light",
+        "shared": [
+          "network",
+          "mentorship"
+        ],
+        "excerpt": "His family's intellectual environment laid a foundation for Huxley's later educational influence."
+      },
+      {
+        "source": "political_views",
+        "target": "social_critique",
+        "weight": 0.7,
+        "recentChange": 0.1,
+        "type": "stable",
+        "shared": [
+          "freedom",
+          "critique"
+        ],
+        "excerpt": "Huxley's political views often intersected with his critiques of societal structures."
+      },
+      {
+        "source": "literary_works",
+        "target": "cultural_impact",
+        "weight": 0.9,
+        "recentChange": 0.2,
+        "type": "strong_rising",
+        "shared": [
+          "influence",
+          "legacy"
+        ],
+        "excerpt": "Huxley's literary contributions form the core of his enduring cultural and historical impact."
+      },
+      {
+        "source": "educational_influence",
+        "target": "political_views",
+        "weight": 0.5,
+        "recentChange": 0,
+        "type": "light",
+        "shared": [
+          "public speaking",
+          "activism"
+        ],
+        "excerpt": "Through lectures and public speaking, Huxley shaped political discourse and activism."
+      },
+      {
+        "source": "scientific_inquiry",
+        "target": "spirituality",
+        "weight": 0.4,
+        "recentChange": 0.1,
+        "type": "rising",
+        "shared": [
+          "consciousness",
+          "exploration"
+        ],
+        "excerpt": "Huxley's scientific interests eventually led him to explore spiritual dimensions of consciousness."
+      },
+      {
+        "source": "early_life",
+        "target": "family_legacy",
+        "weight": 0.5,
+        "recentChange": 0,
+        "type": "stable",
+        "shared": [
+          "family",
+          "education"
+        ],
+        "excerpt": "His early life and education were deeply intertwined with his family's intellectual legacy."
+      },
+      {
+        "source": "philosophy",
+        "target": "political_views",
+        "weight": 0.6,
+        "recentChange": 0.1,
+        "type": "stable",
+        "shared": [
+          "ethics",
+          "freedom"
+        ],
+        "excerpt": "Huxley’s philosophical outlook informed his political views, especially concerning freedom and ethics."
+      }
+    ],
+    "outcomes": [
+      {
+        "id": "brave_new_world",
+        "label": "Brave New World",
+        "year": "1932",
+        "category": "publication",
+        "description": "Aldous Huxley's dystopian novel 'Brave New World' critiques the potential consequences of advanced technology and loss of individuality."
+      },
+      {
+        "id": "doors_of_perception",
+        "label": "The Doors of Perception",
+        "year": "1954",
+        "category": "publication",
+        "description": "This influential essay details Huxley's experiences with mescaline, exploring perceptions of reality and consciousness."
+      },
+      {
+        "id": "island_publication",
+        "label": "Publication of 'Island'",
+        "year": "1962",
+        "category": "publication",
+        "description": "'Island' is Huxley's utopian counterpart to 'Brave New World', exploring holistic and harmonious societal living."
+      }
+    ],
+    "outcome_paths": [
+      {
+        "outcome_id": "brave_new_world",
+        "node_ids": [
+          "social_critique",
+          "literary_works",
+          "cultural_impact"
+        ],
+        "description": "Huxley's critical view of society and technological advancement directly influenced the creation of 'Brave New World'."
+      },
+      {
+        "outcome_id": "doors_of_perception",
+        "node_ids": [
+          "scientific_inquiry",
+          "spirituality",
+          "philosophy"
+        ],
+        "description": "Huxley's exploration of consciousness through scientific and spiritual lenses culminated in this essay."
+      },
+      {
+        "outcome_id": "island_publication",
+        "node_ids": [
+          "literary_works",
+          "philosophy",
+          "spirituality"
+        ],
+        "description": "'Island' reflects Huxley's philosophical and spiritual evolution, presenting an alternative societal vision."
+      }
+    ]
+  },
+  "context": {
+    "places": [
+      {
+        "place": "Godalming, Surrey",
+        "lat": 51.1841,
+        "lng": -0.6128,
+        "start_year": 1894,
+        "end_year": 1908,
+        "description": "Huxley was born and spent part of his early childhood here."
+      },
+      {
+        "place": "Oxford",
+        "lat": 51.752,
+        "lng": -1.2577,
+        "start_year": 1913,
+        "end_year": 1916,
+        "description": "Huxley studied at Balliol College, Oxford, where he began his literary career."
+      },
+      {
+        "place": "Los Angeles",
+        "lat": 34.0522,
+        "lng": -118.2437,
+        "start_year": 1937,
+        "end_year": 1963,
+        "description": "Huxley spent his later years in Los Angeles, where he continued writing and exploring new philosophical ideas."
+      }
+    ],
+    "influences": [
+      {
+        "name": "Julian Huxley",
+        "type": "personal",
+        "direction": "influenced_person",
+        "description": "Aldous' brother, Julian, was a biologist whose scientific ideas influenced Aldous' interest in science."
+      },
+      {
+        "name": "George Orwell",
+        "type": "literary",
+        "direction": "person_influenced",
+        "description": "Orwell’s dystopian themes show the influence of Huxley's explorations of societal structures."
+      },
+      {
+        "name": "Gerald Heard",
+        "type": "philosophical",
+        "direction": "influenced_person",
+        "description": "Heard was a philosopher and writer who influenced Huxley’s interest in spiritual and mystical ideas."
+      },
+      {
+        "name": "T.S. Eliot",
+        "type": "literary",
+        "direction": "influenced_person",
+        "description": "Huxley's contemporary, Eliot, shared mutual literary influence and critique."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Aldous Huxley - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Aldous_Huxley",
+        "type": "wikipedia"
+      },
+      {
+        "title": "The Doors of Perception",
+        "url": "https://en.wikipedia.org/wiki/The_Doors_of_Perception",
+        "type": "wikipedia"
+      },
+      {
+        "title": "Brave New World",
+        "url": "https://en.wikipedia.org/wiki/Brave_New_World",
+        "type": "wikipedia"
+      }
+    ],
+    "cognitive_architecture": {
+      "summary": "Aldous Huxley's cognitive decision-making architecture is rooted in empirical curiosity, driving him to explore complex philosophical and social questions through a lens of artistic and scientific inquiry. His process often begins with observing social or technological phenomena, filtering these through a philosophical lens, and then expressing insights through literary work.",
+      "primary_driver": "Empirical curiosity",
+      "decision_path": [
+        {
+          "stage": "Observation",
+          "description": "Huxley begins by closely observing societal and technological developments.",
+          "branches": [
+            "Curiosity",
+            "Skepticism"
+          ]
+        },
+        {
+          "stage": "Philosophical Filter",
+          "description": "He filters observations through philosophical questioning and ethical considerations.",
+          "branches": [
+            "Humanism",
+            "Pessimism"
+          ]
+        },
+        {
+          "stage": "Creative Synthesis",
+          "description": "Huxley synthesizes his insights into creative narratives or essays.",
+          "branches": [
+            "Fiction",
+            "Non-fiction"
+          ]
+        },
+        {
+          "stage": "Public Engagement",
+          "description": "He engages with the public through published works that challenge societal norms.",
+          "branches": [
+            "Critique",
+            "Advocacy"
+          ]
+        }
+      ],
+      "cognitive_tensions": [
+        {
+          "pole_a": "Humanism",
+          "pole_b": "Pessimism",
+          "description": "Huxley often wrestled with the potential for human progress against the backdrop of societal flaws and dystopian futures."
+        },
+        {
+          "pole_a": "Artistic Expression",
+          "pole_b": "Scientific Inquiry",
+          "description": "He balanced between crafting imaginative literature and engaging with scientific thought to explore human consciousness."
+        }
+      ],
+      "behavioural_signature": "Huxley's characteristic pattern is an intellectual exploration that oscillates between imaginative literature and critical essays, often highlighting the tension between human potential and societal failures."
+    },
+    "pattern_details": "# Aldous Huxley: Pattern Analysis\n\n## Step 1 — Signal Extraction\n\n### Language\n- **Vocabulary Choices**: Huxley's language was both expansive and precise, often incorporating scientific terms and philosophical concepts. He favored a rich tapestry of words that conveyed deep meanings.\n- **Sentence Structure**: He used complex, multi-layered sentences that often reflected his analytical thought process.\n- **Rhetorical Strategies**: Huxley frequently employed satire, irony, and allegory to critique society and illustrate philosophical ideas.\n\n### Behavior\n- **Recurring Actions**: Publishing a diverse array of works, engaging in intellectual discourse, and exploring various philosophical and spiritual themes.\n- **Rituals**: Consistent writing and public speaking engagements.\n- **Characteristic Responses**: Questioning societal norms and advocating for intellectual and spiritual exploration.\n\n### Decisions\n- **Choices**: Chose to write both fiction and non-fiction, exploring themes of dystopia, human potential, and consciousness.\n- **Avoidance**: Steered away from simplistic narratives and superficial analyses.\n- **Prioritization**: Focused on intellectual exploration and societal critique.\n\n### Attention\n- **Focus**: Concentrated on themes of dystopia, consciousness, and spirituality.\n- **Ignored**: Did not dwell on trivial or purely entertainment-driven topics.\n- **Curiosity Patterns**: Consistently investigated the human condition, spirituality, and future societal trends.\n\n### Emotion\n- **Expression Patterns**: Emotionally expressive through his writing, often using characters and narratives to explore complex emotions.\n- **Triggers**: Injustice, ignorance, and societal complacency appeared to trigger strong responses.\n- **Regulation**: Channeled emotions into articulate critiques and philosophical explorations.\n\n### Curiosity\n- **Questions Asked**: Explored questions about the future of humanity, the nature of consciousness, and the impact of technology on society.\n- **Domains Explored**: Philosophy, science, literature, and spirituality.\n\n## Step 2 — Pattern Detection\n\n### Recurring Patterns\n#### Repetition\n- **Pattern**: Intellectual and philosophical exploration.\n- **Examples**: \"Brave New World\" (1932) critiques industrial society's impact on individuality; lectures on human potential.\n- **Why it Works**: Appeals to readers' intellectual curiosity and desire for deeper understanding of societal trends.\n\n#### Preference\n- **Systematic Biases**: Bias toward complex, multi-dimensional narratives.\n- **Examples**: Consistently chose to write essays and novels that explore philosophical and dystopian themes.\n- **Why it Works**: Engages audiences seeking thought-provoking material.\n\n#### Avoidance\n- **Steered Away**: Simplistic or purely entertainment-driven content.\n- **Examples**: No known works fit the pure entertainment genre; his narratives often carry deeper meanings.\n- **Why it Works**: Aligns with an audience looking for substantive and reflective content.\n\n#### Asymmetry\n- **Differed from Norms**: His works often defied conventional storytelling, favoring philosophical depth over plot.\n- **Examples**: \"Point Counter Point\" (1928) uses a non-linear narrative to explore multiple perspectives.\n- **Why it Works**: Challenges readers to think critically and explore multiple viewpoints.\n\n## Step 3 — Cross-Domain Synthesis\n\n### Optimization Pattern\n- **Improvement and Refinement**: Huxley continually refined his philosophical and spiritual ideas through his writing.\n- **Examples**: Transition from early satirical works to later spiritual explorations in \"The Perennial Philosophy\" (1945).\n- **Why it Amplifies Influence**: Shows intellectual growth and depth, appealing to a mature audience seeking development.\n\n### Exploration Pattern\n- **Seek Novelty**: Explores new themes and ideas in each work.\n- **Examples**: From dystopian futures in \"Brave New World\" to spiritual insights in \"The Doors of Perception\" (1954).\n- **Why it Amplifies Influence**: Keeps his work fresh and relevant, attracting diverse readerships.\n\n### Control Pattern\n- **Manage Uncertainty**: Uses structured narratives and philosophical frameworks to impose order on complex ideas.\n- **Examples**: \"Island\" (1962) presents a utopian vision as a counterpoint to his dystopian works.\n- **Why it Amplifies Influence**: Provides readers with frameworks to understand and navigate complex societal issues.\n\n### Expression Pattern\n- **Communicate Identity and Values**: His works consistently reflect his values and philosophical beliefs.\n- **Examples**: Satirical critiques in \"Crome Yellow\" (1921) and spiritual explorations in later essays.\n- **Why it Amplifies Influence**: Creates a cohesive narrative identity that resonates with readers.\n\n## Step 4 — Invariant vs Contextual\n\n### Stable Patterns\n- **Intellectual Exploration**: Present in all contexts, deeply embedded in his writing and public speaking.\n\n### Triggered Patterns\n- **Satire and Critique**: Particularly activated in response to societal and political issues.\n\n## Step 5 — Pattern Interaction Map\n\n### Reinforcing Loops\n- **Intellectual Exploration and Expression Patterns**: These patterns reinforce each other as exploration leads to new expressions, which in turn open new avenues for exploration.\n\n### Conflicts\n- **None Identified**: His patterns show a consistent alignment with his philosophical and intellectual values.\n\n### Gating\n- **Control Pattern**: Enables the expression pattern by providing structured narratives.\n\n## Step 6 — Temporal Trajectory\n\n### Emerging\n- **Spiritual Exploration**: Grew stronger in later works and public discourses.\n\n### Stable\n- **Intellectual Critique**: Consistently present from early works to later essays.\n\n### Decaying\n- **None Identified**: Most patterns have remained consistent or evolved naturally.\n\n## Step 7 — Stress Test\n\n### Pressure\n- **Intellectual Critique Intensifies**: Under societal turmoil, his critiques become sharper.\n\n### Uncertainty\n- **Control Pattern Adapts**: Uses philosophical frameworks to manage uncertainty.\n\n### Conflict\n- **Satirical Critique Dominates**: During interpersonal or societal conflict, satire becomes more prominent.\n\n### Failure\n- **Reorganization and Reflection**: Uses setbacks as opportunities for deeper philosophical reflection.\n\n## Step 8 — Anomaly Detection\n\n### Contradictions\n- **None Identified**: Patterns align consistently with known behaviors and writings.\n\n### Break Patterns\n- **None Identified**: No significant deviations from established patterns noted.\n\n## Step 9 — Adversarial Validation\n\n### Alternative Interpretations\n- **Philosophical Exploration as Avoidance**: Could be seen as avoiding direct action or political engagement.\n- **Confidence Scoring**: High confidence in identified patterns due to consistent evidence across works and public statements.\n\n## Step 10 — Meta Synthesis\n\n### Core System\n- **Intellectual and Philosophical Exploration**: The fundamental architecture driving all other patterns.\n\n### Top Patterns\n1. **Intellectual Exploration**\n   - Real Samples: \"Brave New World,\" lectures on human potential.\n   - Why it Works: Engages curiosity and intellectual growth, creating a lasting impact on readers.\n\n2. **Satirical Critique**\n   - Real Samples: \"Crome Yellow,\" \"Point Counter Point.\"\n   - Why it Works: Provides sharp societal commentary, resonating with audiences seeking critique of norms.\n\n3. **Spiritual Inquiry**\n   - Real Samples: \"The Perennial Philosophy,\" \"The Doors of Perception.\"\n   - Why it Works: Meets the need for spiritual understanding, broadening his appeal.\n\n4. **Narrative Complexity**\n   - Real Samples: \"Point Counter Point,\" multi-layered essays.\n   - Why it Works: Challenges readers to think deeply, enhancing intellectual engagement.\n\n5. **Control Through Structure**\n   - Real Samples: \"Island,\" structured philosophical essays.\n   - Why it Works: Offers frameworks for understanding complexity, appealing to those seeking order.\n\n### Reinforcement Loops\n- **Exploration and Expression**: Intellectual exploration fuels expression, which in turn fosters further exploration.\n\n### Constraints\n- **Complexity**: May limit audience to those willing to engage deeply.\n\n### Leverage Points\n- **Simplification**: Simplifying narratives could broaden appeal without sacrificing depth.\n\n### Confidence\n- **Overall**: High certainty in the core and top patterns due to robust evidence and consistent alignment with known data."
+  }
+}

@@ -50,27 +50,10 @@ export interface CognitiveArchitecture {
   behavioural_signature: string;
 }
 
-export interface PatternItem {
-  pattern: string;
-  description: string;
-  strength: number;
-  samples: string[];
-  impact: string;
-  outcome: string;
-  influence: string;
-}
-
-export interface Patterns {
-  thinking: PatternItem[];
-  speaking: PatternItem[];
-  behavior: PatternItem[];
-}
-
 export interface LLMGeneratedData {
   profile: {
     auto_group: string;
     cognitive_architecture: CognitiveArchitecture;
-    patterns: Patterns;
   };
   graph: GraphData;
   context: ContextData;

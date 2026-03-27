@@ -1,0 +1,605 @@
+{
+  "person": {
+    "id": 11,
+    "name": "Mark Twain",
+    "name_normalized": "mark_twain",
+    "wiki_url": "https://en.wikipedia.org/wiki/Mark_Twain",
+    "wiki_title": "Mark Twain",
+    "wiki_summary": "Samuel Langhorne Clemens, known by the pen name Mark Twain, was an American writer, humorist, and essayist. He has been praised as the \"greatest humorist the United States has produced\", with William Faulkner calling him \"the father of American literature\". Twain's novels include The Adventures of Tom Sawyer (1876) and its sequel, Adventures of Huckleberry Finn (1884), with the latter often called the \"Great American Novel\". He also wrote A Connecticut Yankee in King Arthur's Court (1889) and Pudd'nhead Wilson (1894) and cowrote The Gilded Age: A Tale of Today (1873) with Charles Dudley Warner. The novelist Ernest Hemingway claimed that \"All modern American literature comes from one book by Mark Twain called Huckleberry Finn.\"",
+    "wiki_verified": 1,
+    "auto_group": "Writer",
+    "created_at": "2026-03-27 01:14:00",
+    "updated_at": "2026-03-27 01:14:00"
+  },
+  "version": {
+    "id": 18,
+    "person_id": 11,
+    "version": 1,
+    "graph_data": "{\"nodes\":[{\"id\":\"humor\",\"label\":\"American Humor and Satire\",\"importance\":0.9,\"momentum\":0.8,\"bridge\":0.7,\"cluster\":\"reflective\",\"role\":\"Core\",\"subthemes\":[\"wit\",\"irony\",\"satire\"],\"trend\":[0.6,0.8,0.9,0.9],\"x\":0.5,\"y\":0.7,\"excerpt\":\"Twain's humor was a vessel for social critique, using wit and irony to challenge societal norms.\"},{\"id\":\"social_critique\",\"label\":\"Social Critique and Observation\",\"importance\":0.8,\"momentum\":0.7,\"bridge\":0.6,\"cluster\":\"reflective\",\"role\":\"Core\",\"subthemes\":[\"racial issues\",\"class\",\"morals\"],\"trend\":[0.5,0.7,0.8,0.8],\"x\":0.6,\"y\":0.6,\"excerpt\":\"His works often provided a lens through which to view and question the social issues of his time.\"},{\"id\":\"literary_impact\",\"label\":\"Impact on American Literature\",\"importance\":0.9,\"momentum\":0.9,\"bridge\":0.8,\"cluster\":\"macro\",\"role\":\"Bridge\",\"subthemes\":[\"Huckleberry Finn\",\"novels\",\"short stories\"],\"trend\":[0.4,0.7,0.9,1],\"x\":0.2,\"y\":0.8,\"excerpt\":\"Twain's contributions, especially 'Huckleberry Finn', significantly shaped the course of American literature.\"},{\"id\":\"early_life\",\"label\":\"Early Life and Experiences\",\"importance\":0.6,\"momentum\":0.5,\"bridge\":0.4,\"cluster\":\"reflective\",\"role\":\"Origin\",\"subthemes\":[\"Mississippi River\",\"Hannibal\",\"youth\"],\"trend\":[0.8,0.6,0.4,0.3],\"x\":0.8,\"y\":0.5,\"excerpt\":\"Twain's formative years in Missouri provided rich material for his storytelling and worldview.\"},{\"id\":\"publishing_career\",\"label\":\"Professional Writing and Publishing\",\"importance\":0.8,\"momentum\":0.7,\"bridge\":0.7,\"cluster\":\"technical\",\"role\":\"Core\",\"subthemes\":[\"books\",\"essays\",\"lectures\"],\"trend\":[0.4,0.6,0.8,0.8],\"x\":0.3,\"y\":0.4,\"excerpt\":\"Twain's career as a writer was marked by prolific output and commercial success.\"},{\"id\":\"financial_ventures\",\"label\":\"Financial Ventures and Struggles\",\"importance\":0.5,\"momentum\":0.6,\"bridge\":0.4,\"cluster\":\"strategic\",\"role\":\"Shock\",\"subthemes\":[\"investments\",\"bankruptcy\",\"business\"],\"trend\":[0.3,0.5,0.7,0.6],\"x\":0.4,\"y\":0.2,\"excerpt\":\"Despite his literary success, Twain faced numerous financial challenges, influencing his writings.\"},{\"id\":\"public_speaking\",\"label\":\"Public Speaking and Lectures\",\"importance\":0.7,\"momentum\":0.8,\"bridge\":0.6,\"cluster\":\"technical\",\"role\":\"Emergent\",\"subthemes\":[\"lectures\",\"performances\",\"oratory\"],\"trend\":[0.2,0.5,0.8,0.9],\"x\":0.5,\"y\":0.3,\"excerpt\":\"Twain's lectures were as much a part of his public persona as his written works.\"},{\"id\":\"personal_struggles\",\"label\":\"Personal Struggles and Losses\",\"importance\":0.7,\"momentum\":0.8,\"bridge\":0.5,\"cluster\":\"reflective\",\"role\":\"Foundation\",\"subthemes\":[\"family loss\",\"health\",\"depression\"],\"trend\":[0.3,0.5,0.7,0.8],\"x\":0.7,\"y\":0.4,\"excerpt\":\"Personal tragedies deeply affected Twain's outlook and infused his works with a sense of melancholy.\"},{\"id\":\"cultural_legacy\",\"label\":\"Cultural Legacy and Influence\",\"importance\":0.9,\"momentum\":1,\"bridge\":0.9,\"cluster\":\"macro\",\"role\":\"Emergent\",\"subthemes\":[\"American identity\",\"literary influence\",\"humor\"],\"trend\":[0.3,0.5,0.8,1],\"x\":0.1,\"y\":0.9,\"excerpt\":\"Twain's legacy endures as a foundational figure in American culture and literature.\"},{\"id\":\"global_travels\",\"label\":\"Global Travels and Observations\",\"importance\":0.6,\"momentum\":0.7,\"bridge\":0.7,\"cluster\":\"reflective\",\"role\":\"Bridge\",\"subthemes\":[\"journeys\",\"travel writing\",\"exploration\"],\"trend\":[0.2,0.4,0.7,0.7],\"x\":0.6,\"y\":0.2,\"excerpt\":\"Twain's travels provided a global perspective that enriched his social critiques.\"}],\"edges\":[{\"source\":\"humor\",\"target\":\"social_critique\",\"weight\":0.8,\"recentChange\":0.1,\"type\":\"strong_stable\",\"shared\":[\"satire\",\"society\"],\"excerpt\":\"Twain often used humor as a tool for highlighting and critiquing societal issues.\"},{\"source\":\"literary_impact\",\"target\":\"publishing_career\",\"weight\":0.9,\"recentChange\":0.1,\"type\":\"strong_stable\",\"shared\":[\"novels\",\"influence\"],\"excerpt\":\"His publishing success was integral to his lasting impact on American literature.\"},{\"source\":\"early_life\",\"target\":\"humor\",\"weight\":0.6,\"recentChange\":0.1,\"type\":\"stable\",\"shared\":[\"youth\",\"wit\"],\"excerpt\":\"Twain's early experiences fed into the humor that characterized his later works.\"},{\"source\":\"financial_ventures\",\"target\":\"publishing_career\",\"weight\":0.7,\"recentChange\":0.2,\"type\":\"rising\",\"shared\":[\"business\",\"success\"],\"excerpt\":\"Financial pressures often influenced Twain's publishing decisions.\"},{\"source\":\"public_speaking\",\"target\":\"cultural_legacy\",\"weight\":0.7,\"recentChange\":0.1,\"type\":\"strong_rising\",\"shared\":[\"lectures\",\"influence\"],\"excerpt\":\"Twain's public speaking contributed significantly to his cultural legacy.\"},{\"source\":\"personal_struggles\",\"target\":\"social_critique\",\"weight\":0.7,\"recentChange\":0.1,\"type\":\"strong_stable\",\"shared\":[\"loss\",\"empathy\"],\"excerpt\":\"His personal struggles added depth to his social observations and critiques.\"},{\"source\":\"global_travels\",\"target\":\"literary_impact\",\"weight\":0.6,\"recentChange\":0.1,\"type\":\"stable\",\"shared\":[\"travel\",\"perspective\"],\"excerpt\":\"Twain's travels informed the settings and themes of his influential works.\"},{\"source\":\"cultural_legacy\",\"target\":\"literary_impact\",\"weight\":0.9,\"recentChange\":0,\"type\":\"strong_stable\",\"shared\":[\"legacy\",\"literature\"],\"excerpt\":\"Twain's literary impact solidified his status as a cultural icon.\"},{\"source\":\"early_life\",\"target\":\"personal_struggles\",\"weight\":0.5,\"recentChange\":0.1,\"type\":\"light\",\"shared\":[\"youth\",\"family\"],\"excerpt\":\"His early life experiences foreshadowed many of his later personal challenges.\"},{\"source\":\"humor\",\"target\":\"public_speaking\",\"weight\":0.8,\"recentChange\":0.1,\"type\":\"strong_rising\",\"shared\":[\"wit\",\"performance\"],\"excerpt\":\"Twain's humor was a key component of his engaging public lectures.\"},{\"source\":\"financial_ventures\",\"target\":\"personal_struggles\",\"weight\":0.6,\"recentChange\":0.2,\"type\":\"rising\",\"shared\":[\"financial\",\"stress\"],\"excerpt\":\"Financial difficulties contributed to Twain's personal and emotional challenges.\"},{\"source\":\"global_travels\",\"target\":\"social_critique\",\"weight\":0.7,\"recentChange\":0.1,\"type\":\"strong_stable\",\"shared\":[\"observation\",\"society\"],\"excerpt\":\"Travel experiences broadened Twain's perspective and informed his social critiques.\"},{\"source\":\"cultural_legacy\",\"target\":\"social_critique\",\"weight\":0.8,\"recentChange\":0,\"type\":\"strong_stable\",\"shared\":[\"influence\",\"society\"],\"excerpt\":\"Twain's critiques remain relevant, contributing to his enduring cultural legacy.\"}],\"outcomes\":[{\"id\":\"tom_sawyer\",\"label\":\"Publication of 'The Adventures of Tom Sawyer'\",\"year\":\"1876\",\"category\":\"publication\",\"description\":\"'The Adventures of Tom Sawyer' was published, establishing Twain as a leading American author.\"},{\"id\":\"huck_finn\",\"label\":\"Publication of 'Adventures of Huckleberry Finn'\",\"year\":\"1884\",\"category\":\"publication\",\"description\":\"This novel is often considered Twain's masterpiece and a cornerstone of American literature.\"},{\"id\":\"lecture_tour\",\"label\":\"World Lecture Tour\",\"year\":\"1895-1896\",\"category\":\"event\",\"description\":\"Twain embarked on a lecture tour across the globe, further solidifying his fame.\"},{\"id\":\"bankruptcy\",\"label\":\"Financial Bankruptcy\",\"year\":\"1894\",\"category\":\"event\",\"description\":\"Twain declared bankruptcy due to failed investments, profoundly affecting his life and work.\"}],\"outcome_paths\":[{\"outcome_id\":\"tom_sawyer\",\"node_ids\":[\"early_life\",\"humor\",\"publishing_career\"],\"description\":\"Twain's early experiences and humor directly influenced the creation of 'Tom Sawyer'.\"},{\"outcome_id\":\"huck_finn\",\"node_ids\":[\"social_critique\",\"literary_impact\",\"publishing_career\"],\"description\":\"This novel emerged from Twain's keen social observations and his established literary career.\"},{\"outcome_id\":\"lecture_tour\",\"node_ids\":[\"public_speaking\",\"global_travels\",\"cultural_legacy\"],\"description\":\"Twain's skills in public speaking and his travels were crucial for his successful lecture tour.\"},{\"outcome_id\":\"bankruptcy\",\"node_ids\":[\"financial_ventures\",\"personal_struggles\",\"publishing_career\"],\"description\":\"Financial missteps led to bankruptcy, impacting his personal and professional life.\"}]}",
+    "context_data": "{\"places\":[{\"place\":\"Hannibal, Missouri\",\"lat\":39.7083,\"lng\":-91.3585,\"start_year\":1839,\"end_year\":1853,\"description\":\"Twain's boyhood home that inspired many of his stories.\"},{\"place\":\"Hartford, Connecticut\",\"lat\":41.7658,\"lng\":-72.6734,\"start_year\":1871,\"end_year\":1891,\"description\":\"Where Twain wrote many of his major works.\"},{\"place\":\"Elmira, New York\",\"lat\":42.0898,\"lng\":-76.8077,\"start_year\":1870,\"end_year\":1910,\"description\":\"Twain spent summers here at his sister-in-law's home, Quarry Farm.\"}],\"influences\":[{\"name\":\"Charles Dickens\",\"type\":\"literary\",\"direction\":\"influenced_person\",\"description\":\"Dickens' novels influenced Twain's narrative style and social critiques.\"},{\"name\":\"Bret Harte\",\"type\":\"literary\",\"direction\":\"influenced_person\",\"description\":\"Harte's use of regionalism inspired Twain's own regional depictions.\"},{\"name\":\"William Dean Howells\",\"type\":\"literary\",\"direction\":\"person_influenced\",\"description\":\"Howells was a contemporary and admirer of Twain, influenced by his humor.\"},{\"name\":\"Ernest Hemingway\",\"type\":\"literary\",\"direction\":\"person_influenced\",\"description\":\"Hemingway famously stated that all modern American literature comes from 'Huckleberry Finn.'\"}],\"sources\":[{\"title\":\"Mark Twain - Wikipedia\",\"url\":\"https://en.wikipedia.org/wiki/Mark_Twain\",\"type\":\"wikipedia\"},{\"title\":\"Mark Twain: A Life by Ron Powers\",\"url\":\"https://www.amazon.com/Mark-Twain-Life-Ron-Powers/dp/074324901X\",\"type\":\"book\"}],\"cognitive_architecture\":{\"summary\":\"Mark Twain's cognitive architecture was driven by a strong sense of social observation and humor, which he filtered through a lens of moral consciousness before expressing in creative works that both entertained and critiqued society. His decisions often balanced his satirical edge with deep compassion for human folly.\",\"primary_driver\":\"Social observation\",\"decision_path\":[{\"stage\":\"Observation\",\"description\":\"Twain keenly observed the social dynamics around him.\",\"branches\":[\"Humor\",\"Critique\"]},{\"stage\":\"Moral Filter\",\"description\":\"He processed these observations through a moral lens.\",\"branches\":[\"Empathy\",\"Satire\"]},{\"stage\":\"Creative Synthesis\",\"description\":\"Twain transformed his observations into narrative form.\",\"branches\":[\"Novel\",\"Essay\"]},{\"stage\":\"Public Action\",\"description\":\"He engaged the public through his writings and lectures.\",\"branches\":[\"Publication\",\"Lecture\"]}],\"cognitive_tensions\":[{\"pole_a\":\"Satirical Critique\",\"pole_b\":\"Empathetic Understanding\",\"description\":\"Twain oscillated between mocking societal flaws and empathizing with the individuals within them.\"},{\"pole_a\":\"Cultural Icon\",\"pole_b\":\"Personal Identity\",\"description\":\"He struggled with maintaining his public persona while grappling with private beliefs and insecurities.\"}],\"behavioural_signature\":\"Twain's characteristic pattern involved a deep dive into societal norms, extracting humor and critique, which he then presented in a manner that was both accessible and thought-provoking.\"},\"pattern_details\":\"# Mark Twain: Cognitive Pattern Analysis\\n\\n## STEP 1 — SIGNAL EXTRACTION\\n\\n### Language\\n- **Vocabulary Choices**: Twain frequently employed colloquial language and humor, reflecting his roots and appealing to a broad audience.\\n- **Sentence Structure**: Often used conversational and flowing prose, interspersed with sharp wit.\\n- **Rhetorical Strategies**: Mastered irony and satire, often highlighting societal flaws.\\n  \\n### Behavior\\n- **Recurring Actions**: Twain consistently engaged in public speaking tours and social commentary.\\n- **Rituals**: Regularly wrote during specific hours and maintained a disciplined writing schedule.\\n- **Characteristic Responses**: Used humor as a defense and tool for critique.\\n\\n### Decisions\\n- **Choices**: Chose to write in a way that critiqued social norms and injustices.\\n- **Avoidance**: Avoided overly formal writing styles and rigid structures.\\n- **Prioritization**: Prioritized storytelling that had a moral or social critique embedded.\\n\\n### Attention\\n- **Focus**: Concentrated on societal issues, human nature, and the absurdities of social conventions.\\n- **Ignore**: Often disregarded political correctness and conventional wisdom.\\n- **Curiosity Patterns**: Exhibited an enduring curiosity about human behavior and societal norms.\\n\\n### Emotion\\n- **Expression Patterns**: Frequently expressed emotions through humor and satire.\\n- **Triggers**: Injustice, hypocrisy, and human folly often triggered his emotional expressions.\\n- **Regulation**: Used humor to temper emotional responses and engage audiences.\\n\\n### Curiosity\\n- **Questions**: Frequently questioned societal norms and human nature.\\n- **Domains Explored**: Explored themes of freedom, morality, and identity.\\n\\n## STEP 2 — PATTERN DETECTION\\n\\n### Recurring Patterns\\n- **Humor and Satire**: Consistently used a humorous lens to critique society.\\n  - **Examples**: \\\"The Adventures of Huckleberry Finn\\\" critiques slavery and racism; \\\"A Connecticut Yankee in King Arthur's Court\\\" examines the absurdity of blind tradition.\\n  - **Mechanism**: Humor disarms, making critique palatable and memorable.\\n\\n- **Storytelling with Social Critique**: Twain's narratives often contained underlying social commentary.\\n  - **Examples**: \\\"The Gilded Age\\\" critiques materialism and corruption; \\\"Pudd'nhead Wilson\\\" explores identity and race.\\n  - **Mechanism**: Engages readers in deeper reflection through compelling storytelling.\\n\\n### Preferences\\n- **Systematic Biases**: Preference for colloquial and accessible language to reach broad audiences.\\n  \\n### Avoidance\\n- **Consistent Avoidance**: Avoidance of pretentious language and elitist perspectives.\\n\\n### Asymmetry\\n- **Behavioral Divergence**: Twain's willingness to address controversial topics set him apart from his contemporaries.\\n  - **Examples**: His critique of slavery and racism was bold for his time.\\n\\n## STEP 3 — CROSS-DOMAIN SYNTHESIS\\n\\n### Optimization Pattern\\n- **Example**: Twain refined his humor over time to enhance its social impact, seen in the evolution from \\\"The Innocents Abroad\\\" to \\\"Huckleberry Finn.\\\"\\n\\n### Exploration Pattern\\n- **Example**: Twain explored different genres and themes, from adventure novels to essays on social issues.\\n\\n### Control Pattern\\n- **Example**: Maintained control over his narrative voice, ensuring it remained consistent with his values.\\n\\n### Expression Pattern\\n- **Example**: His public speeches and writings consistently communicated his identity as a critic of society.\\n\\n## STEP 4 — INVARIANT VS CONTEXTUAL\\n\\n### Stable Patterns\\n- **Humor and Social Critique**: These remain constant across contexts, integral to his work and public persona.\\n\\n### Triggered Patterns\\n- **Public Speaking**: His humor was particularly pronounced in public lectures, responding to audience engagement.\\n\\n## STEP 5 — PATTERN INTERACTION MAP\\n\\n### Reinforcing Loops\\n- **Humor and Social Critique**: Humor makes social critique more accessible, which in turn amplifies the humor through shared understanding.\\n\\n### Conflicts\\n- **Public Persona vs. Private Beliefs**: At times, Twain's public humor may have masked deeper personal conflicts or beliefs.\\n\\n### Gating\\n- **Language Choice**: His choice of simple, accessible language enabled his complex critiques to reach and resonate with a wider audience.\\n\\n## STEP 6 — TEMPORAL TRAJECTORY\\n\\n### Emerging\\n- **Social Critique**: Strengthened over time as Twain became more established and confident in his platform.\\n\\n### Stable\\n- **Consistent Use of Humor**: Remained a constant throughout his career.\\n\\n### Decaying\\n- **Public Speaking**: Declined in later years, potentially due to age and health.\\n\\n## STEP 7 — STRESS TEST\\n\\n### Pressure\\n- **Intensification**: Under pressure, Twain's humor often became sharper and more biting.\\n\\n### Uncertainty\\n- **Adaptation**: Twain's humor allowed him to navigate uncertain social and political landscapes by keeping audiences engaged.\\n\\n### Conflict\\n- **Dominance**: His use of humor typically dominated in conflicts, defusing tension.\\n\\n### Failure\\n- **Reorganization**: After financial failures, Twain turned more towards public speaking to recover financially, showcasing adaptability.\\n\\n## STEP 8 — ANOMALY DETECTION\\n\\n### Contradictions\\n- **Behavior vs. Beliefs**: Occasionally, Twain's public humor clashed with his personal struggles with depression.\\n\\n### Break Patterns\\n- **Serious Writings**: At times, Twain wrote serious essays without humor, breaking from his norm.\\n\\n## STEP 9 — ADVERSARIAL VALIDATION\\n\\n### Alternative Interpretations\\n- **Humor as Defense**: Could be argued that humor was primarily a defense mechanism rather than a deliberate social tool.\\n\\n### Confidence Scoring\\n- **High Confidence**: Patterns in humor and social critique\\n- **Medium Confidence**: Patterns in personal vs. public persona\\n\\n## STEP 10 — META SYNTHESIS\\n\\n### Core System\\n- **Humor as a Mechanism for Social Critique**: Central to Twain's work, engaging audiences and encouraging reflection on societal issues.\\n\\n### Top Patterns\\n\\n1. **Humor and Satire**\\n   - **Real Samples**: \\\"Huckleberry Finn\\\" and \\\"A Connecticut Yankee in King Arthur's Court\\\"\\n   - **Why it Works**: Humor makes critique accessible and memorable, reducing defensive reactions.\\n\\n2. **Storytelling with Social Critique**\\n   - **Real Samples**: \\\"The Gilded Age\\\" and \\\"Pudd'nhead Wilson\\\"\\n   - **Why it Works**: Engages readers in narratives that provoke thought on societal issues.\\n\\n3. **Exploration of Human Nature**\\n   - **Real Samples**: \\\"The Adventures of Tom Sawyer\\\" explores childhood and human innocence.\\n   - **Why it Works**: Explores universal themes, making stories relatable.\\n\\n4. **Colloquial Language**\\n   - **Real Samples**: Use of dialect in \\\"Huckleberry Finn\\\"\\n   - **Why it Works**: Enhances authenticity and relatability.\\n\\n5. **Public Engagement**\\n   - **Real Samples**: Frequent public lectures and essays.\\n   - **Why it Works**: Direct engagement amplifies influence and reach.\\n\\n### Reinforcement Loops\\n- **Humor and Critique**: Each reinforces the other, increasing engagement and impact.\\n\\n### Constraints\\n- **Health and Financial Issues**: Restricted public engagements in later life.\\n\\n### Leverage Points\\n- **Public Speaking**: Increasing public engagements could have further amplified his influence.\\n\\n### Confidence\\n- **Overall High Confidence**: Based on consistent patterns across multiple works and public appearances.\"}",
+    "node_count": 10,
+    "edge_count": 13,
+    "model_used": "gpt-4o",
+    "prompt_version": "1.0",
+    "generation_ms": 31115,
+    "created_at": "2026-03-27 01:14:00"
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "humor",
+        "label": "American Humor and Satire",
+        "importance": 0.9,
+        "momentum": 0.8,
+        "bridge": 0.7,
+        "cluster": "reflective",
+        "role": "Core",
+        "subthemes": [
+          "wit",
+          "irony",
+          "satire"
+        ],
+        "trend": [
+          0.6,
+          0.8,
+          0.9,
+          0.9
+        ],
+        "x": 0.5,
+        "y": 0.7,
+        "excerpt": "Twain's humor was a vessel for social critique, using wit and irony to challenge societal norms."
+      },
+      {
+        "id": "social_critique",
+        "label": "Social Critique and Observation",
+        "importance": 0.8,
+        "momentum": 0.7,
+        "bridge": 0.6,
+        "cluster": "reflective",
+        "role": "Core",
+        "subthemes": [
+          "racial issues",
+          "class",
+          "morals"
+        ],
+        "trend": [
+          0.5,
+          0.7,
+          0.8,
+          0.8
+        ],
+        "x": 0.6,
+        "y": 0.6,
+        "excerpt": "His works often provided a lens through which to view and question the social issues of his time."
+      },
+      {
+        "id": "literary_impact",
+        "label": "Impact on American Literature",
+        "importance": 0.9,
+        "momentum": 0.9,
+        "bridge": 0.8,
+        "cluster": "macro",
+        "role": "Bridge",
+        "subthemes": [
+          "Huckleberry Finn",
+          "novels",
+          "short stories"
+        ],
+        "trend": [
+          0.4,
+          0.7,
+          0.9,
+          1
+        ],
+        "x": 0.2,
+        "y": 0.8,
+        "excerpt": "Twain's contributions, especially 'Huckleberry Finn', significantly shaped the course of American literature."
+      },
+      {
+        "id": "early_life",
+        "label": "Early Life and Experiences",
+        "importance": 0.6,
+        "momentum": 0.5,
+        "bridge": 0.4,
+        "cluster": "reflective",
+        "role": "Origin",
+        "subthemes": [
+          "Mississippi River",
+          "Hannibal",
+          "youth"
+        ],
+        "trend": [
+          0.8,
+          0.6,
+          0.4,
+          0.3
+        ],
+        "x": 0.8,
+        "y": 0.5,
+        "excerpt": "Twain's formative years in Missouri provided rich material for his storytelling and worldview."
+      },
+      {
+        "id": "publishing_career",
+        "label": "Professional Writing and Publishing",
+        "importance": 0.8,
+        "momentum": 0.7,
+        "bridge": 0.7,
+        "cluster": "technical",
+        "role": "Core",
+        "subthemes": [
+          "books",
+          "essays",
+          "lectures"
+        ],
+        "trend": [
+          0.4,
+          0.6,
+          0.8,
+          0.8
+        ],
+        "x": 0.3,
+        "y": 0.4,
+        "excerpt": "Twain's career as a writer was marked by prolific output and commercial success."
+      },
+      {
+        "id": "financial_ventures",
+        "label": "Financial Ventures and Struggles",
+        "importance": 0.5,
+        "momentum": 0.6,
+        "bridge": 0.4,
+        "cluster": "strategic",
+        "role": "Shock",
+        "subthemes": [
+          "investments",
+          "bankruptcy",
+          "business"
+        ],
+        "trend": [
+          0.3,
+          0.5,
+          0.7,
+          0.6
+        ],
+        "x": 0.4,
+        "y": 0.2,
+        "excerpt": "Despite his literary success, Twain faced numerous financial challenges, influencing his writings."
+      },
+      {
+        "id": "public_speaking",
+        "label": "Public Speaking and Lectures",
+        "importance": 0.7,
+        "momentum": 0.8,
+        "bridge": 0.6,
+        "cluster": "technical",
+        "role": "Emergent",
+        "subthemes": [
+          "lectures",
+          "performances",
+          "oratory"
+        ],
+        "trend": [
+          0.2,
+          0.5,
+          0.8,
+          0.9
+        ],
+        "x": 0.5,
+        "y": 0.3,
+        "excerpt": "Twain's lectures were as much a part of his public persona as his written works."
+      },
+      {
+        "id": "personal_struggles",
+        "label": "Personal Struggles and Losses",
+        "importance": 0.7,
+        "momentum": 0.8,
+        "bridge": 0.5,
+        "cluster": "reflective",
+        "role": "Foundation",
+        "subthemes": [
+          "family loss",
+          "health",
+          "depression"
+        ],
+        "trend": [
+          0.3,
+          0.5,
+          0.7,
+          0.8
+        ],
+        "x": 0.7,
+        "y": 0.4,
+        "excerpt": "Personal tragedies deeply affected Twain's outlook and infused his works with a sense of melancholy."
+      },
+      {
+        "id": "cultural_legacy",
+        "label": "Cultural Legacy and Influence",
+        "importance": 0.9,
+        "momentum": 1,
+        "bridge": 0.9,
+        "cluster": "macro",
+        "role": "Emergent",
+        "subthemes": [
+          "American identity",
+          "literary influence",
+          "humor"
+        ],
+        "trend": [
+          0.3,
+          0.5,
+          0.8,
+          1
+        ],
+        "x": 0.1,
+        "y": 0.9,
+        "excerpt": "Twain's legacy endures as a foundational figure in American culture and literature."
+      },
+      {
+        "id": "global_travels",
+        "label": "Global Travels and Observations",
+        "importance": 0.6,
+        "momentum": 0.7,
+        "bridge": 0.7,
+        "cluster": "reflective",
+        "role": "Bridge",
+        "subthemes": [
+          "journeys",
+          "travel writing",
+          "exploration"
+        ],
+        "trend": [
+          0.2,
+          0.4,
+          0.7,
+          0.7
+        ],
+        "x": 0.6,
+        "y": 0.2,
+        "excerpt": "Twain's travels provided a global perspective that enriched his social critiques."
+      }
+    ],
+    "edges": [
+      {
+        "source": "humor",
+        "target": "social_critique",
+        "weight": 0.8,
+        "recentChange": 0.1,
+        "type": "strong_stable",
+        "shared": [
+          "satire",
+          "society"
+        ],
+        "excerpt": "Twain often used humor as a tool for highlighting and critiquing societal issues."
+      },
+      {
+        "source": "literary_impact",
+        "target": "publishing_career",
+        "weight": 0.9,
+        "recentChange": 0.1,
+        "type": "strong_stable",
+        "shared": [
+          "novels",
+          "influence"
+        ],
+        "excerpt": "His publishing success was integral to his lasting impact on American literature."
+      },
+      {
+        "source": "early_life",
+        "target": "humor",
+        "weight": 0.6,
+        "recentChange": 0.1,
+        "type": "stable",
+        "shared": [
+          "youth",
+          "wit"
+        ],
+        "excerpt": "Twain's early experiences fed into the humor that characterized his later works."
+      },
+      {
+        "source": "financial_ventures",
+        "target": "publishing_career",
+        "weight": 0.7,
+        "recentChange": 0.2,
+        "type": "rising",
+        "shared": [
+          "business",
+          "success"
+        ],
+        "excerpt": "Financial pressures often influenced Twain's publishing decisions."
+      },
+      {
+        "source": "public_speaking",
+        "target": "cultural_legacy",
+        "weight": 0.7,
+        "recentChange": 0.1,
+        "type": "strong_rising",
+        "shared": [
+          "lectures",
+          "influence"
+        ],
+        "excerpt": "Twain's public speaking contributed significantly to his cultural legacy."
+      },
+      {
+        "source": "personal_struggles",
+        "target": "social_critique",
+        "weight": 0.7,
+        "recentChange": 0.1,
+        "type": "strong_stable",
+        "shared": [
+          "loss",
+          "empathy"
+        ],
+        "excerpt": "His personal struggles added depth to his social observations and critiques."
+      },
+      {
+        "source": "global_travels",
+        "target": "literary_impact",
+        "weight": 0.6,
+        "recentChange": 0.1,
+        "type": "stable",
+        "shared": [
+          "travel",
+          "perspective"
+        ],
+        "excerpt": "Twain's travels informed the settings and themes of his influential works."
+      },
+      {
+        "source": "cultural_legacy",
+        "target": "literary_impact",
+        "weight": 0.9,
+        "recentChange": 0,
+        "type": "strong_stable",
+        "shared": [
+          "legacy",
+          "literature"
+        ],
+        "excerpt": "Twain's literary impact solidified his status as a cultural icon."
+      },
+      {
+        "source": "early_life",
+        "target": "personal_struggles",
+        "weight": 0.5,
+        "recentChange": 0.1,
+        "type": "light",
+        "shared": [
+          "youth",
+          "family"
+        ],
+        "excerpt": "His early life experiences foreshadowed many of his later personal challenges."
+      },
+      {
+        "source": "humor",
+        "target": "public_speaking",
+        "weight": 0.8,
+        "recentChange": 0.1,
+        "type": "strong_rising",
+        "shared": [
+          "wit",
+          "performance"
+        ],
+        "excerpt": "Twain's humor was a key component of his engaging public lectures."
+      },
+      {
+        "source": "financial_ventures",
+        "target": "personal_struggles",
+        "weight": 0.6,
+        "recentChange": 0.2,
+        "type": "rising",
+        "shared": [
+          "financial",
+          "stress"
+        ],
+        "excerpt": "Financial difficulties contributed to Twain's personal and emotional challenges."
+      },
+      {
+        "source": "global_travels",
+        "target": "social_critique",
+        "weight": 0.7,
+        "recentChange": 0.1,
+        "type": "strong_stable",
+        "shared": [
+          "observation",
+          "society"
+        ],
+        "excerpt": "Travel experiences broadened Twain's perspective and informed his social critiques."
+      },
+      {
+        "source": "cultural_legacy",
+        "target": "social_critique",
+        "weight": 0.8,
+        "recentChange": 0,
+        "type": "strong_stable",
+        "shared": [
+          "influence",
+          "society"
+        ],
+        "excerpt": "Twain's critiques remain relevant, contributing to his enduring cultural legacy."
+      }
+    ],
+    "outcomes": [
+      {
+        "id": "tom_sawyer",
+        "label": "Publication of 'The Adventures of Tom Sawyer'",
+        "year": "1876",
+        "category": "publication",
+        "description": "'The Adventures of Tom Sawyer' was published, establishing Twain as a leading American author."
+      },
+      {
+        "id": "huck_finn",
+        "label": "Publication of 'Adventures of Huckleberry Finn'",
+        "year": "1884",
+        "category": "publication",
+        "description": "This novel is often considered Twain's masterpiece and a cornerstone of American literature."
+      },
+      {
+        "id": "lecture_tour",
+        "label": "World Lecture Tour",
+        "year": "1895-1896",
+        "category": "event",
+        "description": "Twain embarked on a lecture tour across the globe, further solidifying his fame."
+      },
+      {
+        "id": "bankruptcy",
+        "label": "Financial Bankruptcy",
+        "year": "1894",
+        "category": "event",
+        "description": "Twain declared bankruptcy due to failed investments, profoundly affecting his life and work."
+      }
+    ],
+    "outcome_paths": [
+      {
+        "outcome_id": "tom_sawyer",
+        "node_ids": [
+          "early_life",
+          "humor",
+          "publishing_career"
+        ],
+        "description": "Twain's early experiences and humor directly influenced the creation of 'Tom Sawyer'."
+      },
+      {
+        "outcome_id": "huck_finn",
+        "node_ids": [
+          "social_critique",
+          "literary_impact",
+          "publishing_career"
+        ],
+        "description": "This novel emerged from Twain's keen social observations and his established literary career."
+      },
+      {
+        "outcome_id": "lecture_tour",
+        "node_ids": [
+          "public_speaking",
+          "global_travels",
+          "cultural_legacy"
+        ],
+        "description": "Twain's skills in public speaking and his travels were crucial for his successful lecture tour."
+      },
+      {
+        "outcome_id": "bankruptcy",
+        "node_ids": [
+          "financial_ventures",
+          "personal_struggles",
+          "publishing_career"
+        ],
+        "description": "Financial missteps led to bankruptcy, impacting his personal and professional life."
+      }
+    ]
+  },
+  "context": {
+    "places": [
+      {
+        "place": "Hannibal, Missouri",
+        "lat": 39.7083,
+        "lng": -91.3585,
+        "start_year": 1839,
+        "end_year": 1853,
+        "description": "Twain's boyhood home that inspired many of his stories."
+      },
+      {
+        "place": "Hartford, Connecticut",
+        "lat": 41.7658,
+        "lng": -72.6734,
+        "start_year": 1871,
+        "end_year": 1891,
+        "description": "Where Twain wrote many of his major works."
+      },
+      {
+        "place": "Elmira, New York",
+        "lat": 42.0898,
+        "lng": -76.8077,
+        "start_year": 1870,
+        "end_year": 1910,
+        "description": "Twain spent summers here at his sister-in-law's home, Quarry Farm."
+      }
+    ],
+    "influences": [
+      {
+        "name": "Charles Dickens",
+        "type": "literary",
+        "direction": "influenced_person",
+        "description": "Dickens' novels influenced Twain's narrative style and social critiques."
+      },
+      {
+        "name": "Bret Harte",
+        "type": "literary",
+        "direction": "influenced_person",
+        "description": "Harte's use of regionalism inspired Twain's own regional depictions."
+      },
+      {
+        "name": "William Dean Howells",
+        "type": "literary",
+        "direction": "person_influenced",
+        "description": "Howells was a contemporary and admirer of Twain, influenced by his humor."
+      },
+      {
+        "name": "Ernest Hemingway",
+        "type": "literary",
+        "direction": "person_influenced",
+        "description": "Hemingway famously stated that all modern American literature comes from 'Huckleberry Finn.'"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Mark Twain - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Mark_Twain",
+        "type": "wikipedia"
+      },
+      {
+        "title": "Mark Twain: A Life by Ron Powers",
+        "url": "https://www.amazon.com/Mark-Twain-Life-Ron-Powers/dp/074324901X",
+        "type": "book"
+      }
+    ],
+    "cognitive_architecture": {
+      "summary": "Mark Twain's cognitive architecture was driven by a strong sense of social observation and humor, which he filtered through a lens of moral consciousness before expressing in creative works that both entertained and critiqued society. His decisions often balanced his satirical edge with deep compassion for human folly.",
+      "primary_driver": "Social observation",
+      "decision_path": [
+        {
+          "stage": "Observation",
+          "description": "Twain keenly observed the social dynamics around him.",
+          "branches": [
+            "Humor",
+            "Critique"
+          ]
+        },
+        {
+          "stage": "Moral Filter",
+          "description": "He processed these observations through a moral lens.",
+          "branches": [
+            "Empathy",
+            "Satire"
+          ]
+        },
+        {
+          "stage": "Creative Synthesis",
+          "description": "Twain transformed his observations into narrative form.",
+          "branches": [
+            "Novel",
+            "Essay"
+          ]
+        },
+        {
+          "stage": "Public Action",
+          "description": "He engaged the public through his writings and lectures.",
+          "branches": [
+            "Publication",
+            "Lecture"
+          ]
+        }
+      ],
+      "cognitive_tensions": [
+        {
+          "pole_a": "Satirical Critique",
+          "pole_b": "Empathetic Understanding",
+          "description": "Twain oscillated between mocking societal flaws and empathizing with the individuals within them."
+        },
+        {
+          "pole_a": "Cultural Icon",
+          "pole_b": "Personal Identity",
+          "description": "He struggled with maintaining his public persona while grappling with private beliefs and insecurities."
+        }
+      ],
+      "behavioural_signature": "Twain's characteristic pattern involved a deep dive into societal norms, extracting humor and critique, which he then presented in a manner that was both accessible and thought-provoking."
+    },
+    "pattern_details": "# Mark Twain: Cognitive Pattern Analysis\n\n## STEP 1 — SIGNAL EXTRACTION\n\n### Language\n- **Vocabulary Choices**: Twain frequently employed colloquial language and humor, reflecting his roots and appealing to a broad audience.\n- **Sentence Structure**: Often used conversational and flowing prose, interspersed with sharp wit.\n- **Rhetorical Strategies**: Mastered irony and satire, often highlighting societal flaws.\n  \n### Behavior\n- **Recurring Actions**: Twain consistently engaged in public speaking tours and social commentary.\n- **Rituals**: Regularly wrote during specific hours and maintained a disciplined writing schedule.\n- **Characteristic Responses**: Used humor as a defense and tool for critique.\n\n### Decisions\n- **Choices**: Chose to write in a way that critiqued social norms and injustices.\n- **Avoidance**: Avoided overly formal writing styles and rigid structures.\n- **Prioritization**: Prioritized storytelling that had a moral or social critique embedded.\n\n### Attention\n- **Focus**: Concentrated on societal issues, human nature, and the absurdities of social conventions.\n- **Ignore**: Often disregarded political correctness and conventional wisdom.\n- **Curiosity Patterns**: Exhibited an enduring curiosity about human behavior and societal norms.\n\n### Emotion\n- **Expression Patterns**: Frequently expressed emotions through humor and satire.\n- **Triggers**: Injustice, hypocrisy, and human folly often triggered his emotional expressions.\n- **Regulation**: Used humor to temper emotional responses and engage audiences.\n\n### Curiosity\n- **Questions**: Frequently questioned societal norms and human nature.\n- **Domains Explored**: Explored themes of freedom, morality, and identity.\n\n## STEP 2 — PATTERN DETECTION\n\n### Recurring Patterns\n- **Humor and Satire**: Consistently used a humorous lens to critique society.\n  - **Examples**: \"The Adventures of Huckleberry Finn\" critiques slavery and racism; \"A Connecticut Yankee in King Arthur's Court\" examines the absurdity of blind tradition.\n  - **Mechanism**: Humor disarms, making critique palatable and memorable.\n\n- **Storytelling with Social Critique**: Twain's narratives often contained underlying social commentary.\n  - **Examples**: \"The Gilded Age\" critiques materialism and corruption; \"Pudd'nhead Wilson\" explores identity and race.\n  - **Mechanism**: Engages readers in deeper reflection through compelling storytelling.\n\n### Preferences\n- **Systematic Biases**: Preference for colloquial and accessible language to reach broad audiences.\n  \n### Avoidance\n- **Consistent Avoidance**: Avoidance of pretentious language and elitist perspectives.\n\n### Asymmetry\n- **Behavioral Divergence**: Twain's willingness to address controversial topics set him apart from his contemporaries.\n  - **Examples**: His critique of slavery and racism was bold for his time.\n\n## STEP 3 — CROSS-DOMAIN SYNTHESIS\n\n### Optimization Pattern\n- **Example**: Twain refined his humor over time to enhance its social impact, seen in the evolution from \"The Innocents Abroad\" to \"Huckleberry Finn.\"\n\n### Exploration Pattern\n- **Example**: Twain explored different genres and themes, from adventure novels to essays on social issues.\n\n### Control Pattern\n- **Example**: Maintained control over his narrative voice, ensuring it remained consistent with his values.\n\n### Expression Pattern\n- **Example**: His public speeches and writings consistently communicated his identity as a critic of society.\n\n## STEP 4 — INVARIANT VS CONTEXTUAL\n\n### Stable Patterns\n- **Humor and Social Critique**: These remain constant across contexts, integral to his work and public persona.\n\n### Triggered Patterns\n- **Public Speaking**: His humor was particularly pronounced in public lectures, responding to audience engagement.\n\n## STEP 5 — PATTERN INTERACTION MAP\n\n### Reinforcing Loops\n- **Humor and Social Critique**: Humor makes social critique more accessible, which in turn amplifies the humor through shared understanding.\n\n### Conflicts\n- **Public Persona vs. Private Beliefs**: At times, Twain's public humor may have masked deeper personal conflicts or beliefs.\n\n### Gating\n- **Language Choice**: His choice of simple, accessible language enabled his complex critiques to reach and resonate with a wider audience.\n\n## STEP 6 — TEMPORAL TRAJECTORY\n\n### Emerging\n- **Social Critique**: Strengthened over time as Twain became more established and confident in his platform.\n\n### Stable\n- **Consistent Use of Humor**: Remained a constant throughout his career.\n\n### Decaying\n- **Public Speaking**: Declined in later years, potentially due to age and health.\n\n## STEP 7 — STRESS TEST\n\n### Pressure\n- **Intensification**: Under pressure, Twain's humor often became sharper and more biting.\n\n### Uncertainty\n- **Adaptation**: Twain's humor allowed him to navigate uncertain social and political landscapes by keeping audiences engaged.\n\n### Conflict\n- **Dominance**: His use of humor typically dominated in conflicts, defusing tension.\n\n### Failure\n- **Reorganization**: After financial failures, Twain turned more towards public speaking to recover financially, showcasing adaptability.\n\n## STEP 8 — ANOMALY DETECTION\n\n### Contradictions\n- **Behavior vs. Beliefs**: Occasionally, Twain's public humor clashed with his personal struggles with depression.\n\n### Break Patterns\n- **Serious Writings**: At times, Twain wrote serious essays without humor, breaking from his norm.\n\n## STEP 9 — ADVERSARIAL VALIDATION\n\n### Alternative Interpretations\n- **Humor as Defense**: Could be argued that humor was primarily a defense mechanism rather than a deliberate social tool.\n\n### Confidence Scoring\n- **High Confidence**: Patterns in humor and social critique\n- **Medium Confidence**: Patterns in personal vs. public persona\n\n## STEP 10 — META SYNTHESIS\n\n### Core System\n- **Humor as a Mechanism for Social Critique**: Central to Twain's work, engaging audiences and encouraging reflection on societal issues.\n\n### Top Patterns\n\n1. **Humor and Satire**\n   - **Real Samples**: \"Huckleberry Finn\" and \"A Connecticut Yankee in King Arthur's Court\"\n   - **Why it Works**: Humor makes critique accessible and memorable, reducing defensive reactions.\n\n2. **Storytelling with Social Critique**\n   - **Real Samples**: \"The Gilded Age\" and \"Pudd'nhead Wilson\"\n   - **Why it Works**: Engages readers in narratives that provoke thought on societal issues.\n\n3. **Exploration of Human Nature**\n   - **Real Samples**: \"The Adventures of Tom Sawyer\" explores childhood and human innocence.\n   - **Why it Works**: Explores universal themes, making stories relatable.\n\n4. **Colloquial Language**\n   - **Real Samples**: Use of dialect in \"Huckleberry Finn\"\n   - **Why it Works**: Enhances authenticity and relatability.\n\n5. **Public Engagement**\n   - **Real Samples**: Frequent public lectures and essays.\n   - **Why it Works**: Direct engagement amplifies influence and reach.\n\n### Reinforcement Loops\n- **Humor and Critique**: Each reinforces the other, increasing engagement and impact.\n\n### Constraints\n- **Health and Financial Issues**: Restricted public engagements in later life.\n\n### Leverage Points\n- **Public Speaking**: Increasing public engagements could have further amplified his influence.\n\n### Confidence\n- **Overall High Confidence**: Based on consistent patterns across multiple works and public appearances."
+  }
+}
