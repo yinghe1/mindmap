@@ -4,7 +4,17 @@ Interactive visualization of how notable people think, speak, and behave — pow
 
 Enter any person's name (exists in wikipedia) and get a rich cognitive architecture map: themed nodes, weighted connections, life-phase trends, behavioural patterns, and more.
 
+To simplyly view generated sample output, you can view here:
+
+- [Leonardo Da Vinci](https://yinghe1.github.io/mindmapllm/exportedNotablePerson/leonardo_da_vinci.html)
+- [Arthur Clarke](https://yinghe1.github.io/mindmapllm/exportedNotablePerson/arthur_clarke.html)
+- [Aldous Huxley](https://yinghe1.github.io/mindmapllm/exportedNotablePerson/aldous_huxley.html)
+
+If you are interested in top 5 front tier llm's cognitive architecture and thinking patterns, view here:
+- [mindmapllm](https://yinghe1.github.io/mindmapllm/)
+
 <video src="https://github.com/user-attachments/assets/25b86ebb-88b7-4b1b-a801-79f02b248d20" autoplay loop muted playsinline width="100%"></video>
+
 
 ![Dark mode](https://img.shields.io/badge/theme-dark%20%26%20light-blue)
 
