@@ -13,7 +13,10 @@ let client: OpenAI | null = null;
 
 function getClient(): OpenAI {
   if (!client) {
-    client = new OpenAI({ apiKey: config.openaiApiKey });
+    client = new OpenAI({
+      apiKey: config.useLocal ? 'ollama' : config.openaiApiKey,
+      baseURL: config.useLocal ? 'http://localhost:11434/v1' : undefined,
+    });
   }
   return client;
 }
@@ -31,10 +34,10 @@ export async function generateCognitiveMap(
 
   const start = Date.now();
 
-  logger.info({ msg: 'LLM call started', name, model: 'gpt-4o', systemPrompt: SYSTEM_PROMPT, userPrompt });
+  logger.info({ msg: 'LLM call started', name, model: config.useLocal ? config.localModel : 'gpt-4o', systemPrompt: SYSTEM_PROMPT, userPrompt });
 
   const response = await openai.chat.completions.create({
-    model: 'gpt-4o',
+    model: config.useLocal ? config.localModel : 'gpt-4o',
     messages: [
       { role: 'system', content: SYSTEM_PROMPT },
       { role: 'user', content: userPrompt },
@@ -78,10 +81,10 @@ export async function generatePatternDetails(
   const userPrompt = buildPatternDetailsPrompt(name, wikiSummary);
 
   const start = Date.now();
-  logger.info({ msg: 'Pattern details LLM call started', name, model: 'gpt-4o' });
+  logger.info({ msg: 'Pattern details LLM call started', name, model: config.useLocal ? config.localModel : 'gpt-4o' });
 
   const response = await openai.chat.completions.create({
-    model: 'gpt-4o',
+    model: config.useLocal ? config.localModel : 'gpt-4o',
     messages: [
       { role: 'system', content: 'You are a cognitive pattern analyst and behavioral modeler. Produce a thorough, well-structured analysis in markdown format.' },
       { role: 'user', content: userPrompt },
