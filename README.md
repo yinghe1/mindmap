@@ -55,7 +55,7 @@ If you are interested in top 5 front tier llm's cognitive architecture and think
 
 - Node.js 18+
 - npm 9+
-- An [OpenAI API key](https://platform.openai.com/api-keys)
+- An [OpenAI API key](https://platform.openai.com/api-keys) **or** a local model via [Ollama](https://ollama.com)
 
 ## Install & Run
 
@@ -69,15 +69,36 @@ npm install
 
 # Set up environment variables
 cp .env.example .env
-# Edit server/.env and add your OpenAI API key:
-#   OPENAI_API_KEY=sk-...
-# If you don't want to use llm, you can just import the json in the importableData folder to see how it works
+# Edit server/.env — see Environment Variables below
 
 # Run in development mode (starts both server and client)
 npm run dev
 ```
 
 The app will be available at **http://localhost:5173** (client) with the API server on **http://localhost:3000**.
+
+## Environment Variables
+
+Create `server/.env` with the following:
+
+| Variable | Required | Default | Description |
+|---|---|---|---|
+| `OPENAI_API_KEY` | Yes (unless `USE_LOCAL=true`) | — | Your OpenAI API key |
+| `USE_LOCAL` | No | `false` | Set to `true` to use a local Ollama model instead of OpenAI |
+| `LOCAL_MODEL` | No | `llama3` | Ollama model name to use when `USE_LOCAL=true` (e.g. `gemma4:26b`, `mistral`) |
+
+### Using a local model (Ollama)
+
+1. Install [Ollama](https://ollama.com) and pull your model:
+   ```bash
+   ollama pull gemma4:26b
+   ```
+2. Set in `server/.env`:
+   ```env
+   USE_LOCAL=true
+   LOCAL_MODEL=gemma4:26b
+   ```
+3. Start Ollama, then run `npm run dev` as normal. No OpenAI key required.
 
 ## Project Structure
 
